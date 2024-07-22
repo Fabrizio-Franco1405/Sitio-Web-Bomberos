@@ -1,0 +1,21 @@
+{
+        "liveSassCompile.settings.autoprefix": [
+          "> 1%",
+          "last 2 versions"
+        ],
+        "liveSassCompile.settings.formats": [
+          {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/Sitio_Web_Bomberos/css"
+          }
+        ],
+        "liveSassCompile.settings.includeItems": [
+          "/src/scss/estilos.scss"
+        ],
+        "liveSassCompile.settings.excludeList": [
+          "**/node_modules/**",
+          ".vscode/**"
+        ],
+        "liveSassCompile.settings.generateMap": true
+}
