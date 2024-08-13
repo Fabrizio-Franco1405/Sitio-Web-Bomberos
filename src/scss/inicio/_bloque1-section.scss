@@ -1,0 +1,29 @@
+section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.sections-buttons {
+    background-color: #FFFFFF;
+    width: 120px;
+    height: 80px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Madetommy';
+    font-size: 15px;
+    color: #17171E;
+    cursor: pointer;
+}
+
+.sections-buttons img {
+    width: 50px;
+    height: 50px;
+}
+
+p {
+    margin: 0;
+}

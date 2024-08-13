@@ -1,0 +1,101 @@
+// Estilos para la base del Footer
+.footer-4 {
+    background-color: #2c2f35;
+    width: 100%;
+    height: 30vh;
+    // margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+// Creamos el top del footer
+.footer-top {
+    width: 100%;
+    height: 25%;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #FF9E5D, #FF5E6B, #8A82FF);
+}
+
+.footer-top h2 {
+    color: #FFFFFF;
+    font-family: 'Madetommy-Medium';
+    font-size: 2em;
+    text-align: start;
+    margin: auto 5%;
+}
+
+// El Centro del footer
+.footer-center {
+    background-color: #2c2f35;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10%;
+}
+
+.footer-center h2 {
+    font-family: 'Madetommy-Medium';
+    letter-spacing: 1px;
+    font-size: 1.4em;
+    margin: auto 5%;
+    text-align: start;
+    color: #C9D8DD; // Yeti #C9D8DD | Santuary #9EA4A8
+}
+
+.footer-links {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.footer-links a {
+    font-family: 'Madetommy';
+    text-decoration: none;
+    color: #9EA4A8;
+}
+
+.footer-links a:hover {
+    color: #FFFFFF;
+}
+
+// El bottom del fooder
+.footer-bottom {
+    background-color: #17171E;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logos {
+    margin-left: 5%;
+}
+
+.footer-bottom img {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.footer-bottom p {
+    font-family: 'Madetommy'; // Yeti #C9D8DD | Santuary #9EA4A8
+    color: #C9D8DD;
+}
+
+.footer-social {
+    margin-right: 1%;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,194 @@
+.menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar {
+    width: 60px;
+    height: 85%;
+    background-color: #2E323DCC;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    position: fixed;
+    left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 10; 
+}
+
+.sidebar:hover {
+    width: 300px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-header img {
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+    margin-right: 8px;
+}
+
+.sidebar-header span {
+    font-family: 'Madetommy';
+    font-size: 17px;
+    color: #FFFFFF;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sidebar:hover .sidebar-header span {
+    opacity: 1;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: #717A80; // #717A80
+    font-family: 'Madetommy';
+    font-size: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #A0ABAFCC; // #465264
+    color: #FFFFFF;
+}
+
+.menu-item.active {
+    background-color: #8A82FF80; // #5176FF
+    color: #FFFFFF;
+}
+
+.menu-item img {
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.menu-item span {
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.menu-item a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.sidebar:hover .menu-item span {
+    opacity: 1;
+}
+
+.submenu {
+    background-color: #17171ECC; // #2F3946
+    padding: 10px 7px;
+    border-radius: 10px;
+    margin: 0 10px 20px 10px;
+}
+
+.submenu-item {
+    display: flex;
+    align-items: center;
+    color: #717A80; //#B0B4BB
+    font-family: 'Madetommy';
+    font-size: 17px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.submenu-item img {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.submenu-item span {
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.submenu-item span:hover {
+    color: #FFFFFF;
+}
+
+.sidebar:hover .submenu-item span {
+    opacity: 1;
+}
+
+.sidebar-footer {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    color: #717A80;
+    font-family: 'Madetommy';
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidebar-footer:hover {
+    color: #FFFFFF;
+}
+
+.sidebar-footer img {
+    margin-right: 20px;
+    font-size: 20px;
+    transition: margin-right 0.3s ease;
+}
+
+.sidebar-footer span {
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sidebar:hover .sidebar-footer span {
+    opacity: 1;
+}
+
+// Dimensiones para los iconos del menú principales
+.menu-icon {
+    width: 30px;
+    height: 30px;
+}
+
+// Dimensiones para los iconos del sub-menú
+.menu-icon-2 {
+    width: 25px;
+    height: 25px;
+}
+
+//-------------------------------     Título principal de la página     -------------------------------//
+main {
+    width: 60%;
+    height: 150px;
+    margin-top: 30px;
+    margin-left: 8%;
+    color: #FFFFFF;
+}
+
+main h1 {
+    font-family: 'Madetommy-Medium';
+    font-size: 2em;
+}
+
+main h2 {
+    font-family: 'Madetommy';
+    font-size: 1.4em;
+}

@@ -1,0 +1,406 @@
+@media screen and (max-width: 768px){
+
+    //----------------------------------- Ajustes para el Bloque 1 -----------------------------------//
+    .content {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    header {
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .icon-hidden {
+        visibility: visible;
+        width: 35px;
+        height: 35px;
+        background-color: #F4F2EF;
+    }
+
+    main {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        height: 100px;
+    }
+
+    .view-more {
+        width: 90px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .sidebar {
+        visibility: hidden;
+    }
+
+    .carousel-container {
+        height: 60%;
+        width: 94%;
+    }
+
+    //----------------------------------- Ajustes para el Bloque 2 -----------------------------------//
+
+    .main-container-2 {
+        width: 85%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .title-container {
+        text-align: center;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .main-container-2 h1 {
+        font-size: 1.8em;
+    }
+
+    .main-container-2 h3 {
+        font-size: 1.2em;
+    }
+
+    /* Ajustamos las imágenes */
+    .image-elements {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+    }
+
+    .image-card {
+        width: 100%;
+        height: 150px;
+    }
+
+    .image-card img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Ajustamos el tamaño de la capa de texto */
+    .image-card .overlay {
+        height: 40%;
+    }
+
+    /* Ajustamos el botón en el pie de página */
+    .footer-container {
+        justify-content: center;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .footer-container button {
+        width: 60%;
+        height: 50px;
+        border-radius: 25px;
+    }
+
+    //----------------------------------- Ajustes para el Bloque 3 -----------------------------------//
+
+    // Ajuste del contenedor principal
+    .main-container-3 {
+        width: 95%;
+        height: 80%; /* Permite que la altura se ajuste al contenido */
+    }
+
+    // Ajuste del contenedor de bloques de texto para apilar los elementos en columna
+    .block-container {
+        flex-direction: column;
+        align-items: center;
+        height: 65%; /* Ajusta la altura según el contenido */
+    }
+
+    // Ajuste del primer bloque de texto
+    .block-text-1 {
+        width: 100%;
+        padding-right: 0; /* Elimina el padding para un mejor ajuste en móviles */
+        margin-bottom: 20px; /* Añade espacio debajo del primer bloque */
+        text-align: center; /* Centra el texto para mejor legibilidad */
+    }
+
+    .block-text-1 h2 {
+        font-size: 28px; /* Reduce el tamaño de la fuente para pantallas más pequeñas */
+    }
+
+    .block-text-1 p {
+        font-size: 16px; /* Ajusta el tamaño de la fuente para el texto descriptivo */
+    }
+
+    // Ajuste del segundo bloque de texto
+    .block-text-2 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .block-text-child {
+        width: 100%;
+        padding: 15px; /* Ajusta el padding para mantener un buen margen en pantallas pequeñas */
+    }
+
+    .text-box p {
+        font-size: 16px; /* Reduce ligeramente el tamaño de la fuente para mejor legibilidad en móviles */
+    }
+
+    // Ajuste de la imagen del perfil
+    .perfil img {
+        width: 40px;
+        height: 40px; /* Reduce el tamaño de la imagen para que se ajuste a pantallas pequeñas */
+    }
+
+    .perfil div p {
+        font-size: 16px; /* Ajusta el tamaño del nombre */
+    }
+
+    .perfil div span {
+        font-size: 12px; /* Ajusta el tamaño del cargo */
+    }
+
+    // Ajuste del botón en la parte inferior
+    .block-button {
+        justify-content: center; /* Centra el botón en pantallas pequeñas */
+        margin-top: 20px; /* Añade un margen superior para separar el botón del contenido */
+    }
+
+    .block-button a {
+        font-size: 16px; /* Ajusta el tamaño de la fuente del botón */
+    }
+
+    //----------------------------------- Ajustes para el Bloque 4 -----------------------------------//
+
+    .bloque-4 {
+        padding: 20px 0;
+        height: auto;
+    }
+
+    .bloque-4 h2 {
+        font-size: 1.5em;
+    }
+
+    .bloque-4 h3 {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        max-width: 90%;
+        padding: 0 5%;
+    }
+
+    .cards-4 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card-4 {
+        max-width: 100%;
+        padding: 15px;
+        box-shadow: none; /* Quita la sombra para un diseño más plano en pantallas pequeñas */
+    }
+
+    .card-4 img {
+        max-width: 80%; /* Haz la imagen más grande en relación al contenedor */
+    }
+
+    .footer-4 {
+        height: auto;
+        margin: 0;
+    }
+
+    .footer-top h2 {
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .footer-center {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-center h2 {
+        font-size: 1.2em;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .footer-links {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-logos {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer-social {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer-bottom img {
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+        border-radius: 10px;
+    }
+}
+
+/*@media screen and (min-width: 1680px) {
+    header {
+        height: 120px;
+    }
+
+    header img {
+        width: 70px;
+        height: 70px;
+    }
+
+    main {
+        height: 30%;
+    }
+
+    main h1 {
+        font-size: 44px;
+    }
+
+    main h2 {
+        font-size: 38px;
+    }
+
+    .sidebar {
+        width: 90px;
+    }
+
+    .sidebar:hover {
+        width: 500px;
+    }
+
+    .sidebar-header img {
+        width: 60px;
+        height: 60px;
+        margin-right: 4px;
+    }
+
+    .sidebar-header span {
+        font-size: 28px;
+        padding: 10px 20px;
+    }
+
+    .menu-item {
+        font-size: 24px;
+        padding: 17px 22px;
+    }
+
+    .menu-item img {
+        margin-right: 25px;
+        font-size: 28px;
+    }
+
+    .submenu {
+        padding: 16px 14px;
+    }
+
+    .submenu-item img {
+        font-size: 24px;
+        margin-right: 25px;
+    }
+
+    .submenu-item {
+        font-size: 24px;
+        margin-right: 25px;
+    }
+
+    .sidebar-footer {
+        font-size: 24px;
+        padding: 27px 22px;
+    }
+
+    .sidebar-footer img {
+        margin-right: 25px;
+    }
+
+    .menu-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .menu-icon-2 {
+        width: 40px;
+        height: 40px;
+    }
+
+    .content {
+        height: 100%;
+    }
+
+    .carousel-container {
+        height: 100%;
+    }
+
+    .text-buttons {
+        height: 15%;
+        font-size: 28px;
+    }
+
+    .image-item {
+        height: 70%;
+    }
+
+    .buttons {
+        height: 15%;
+    }
+
+    .arrow {
+        width: 50px;
+        height: 50px;
+    }
+
+    .expand {
+        width: 80px;
+        height: 80px;
+    }
+
+    .view-more {
+        width: 200px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 20px;
+    }
+
+    section {
+        height: 30%;
+    }
+
+    .sections-buttons {
+        width: 160px;
+        height: 120px;
+        font-size: 26px;
+    }
+
+    .sections-buttons img {
+        width: 80px;
+        height: 80px;
+    }
+}*/
