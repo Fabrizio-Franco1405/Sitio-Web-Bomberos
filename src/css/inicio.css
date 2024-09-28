@@ -190,6 +190,36 @@
   height: 25px;
 }
 
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+    height: 88%;
+  }
+  .sidebar:hover {
+    width: 250px; /* Se expande al pasar el ratón */
+  }
+  .menu-icon {
+    display: block; /* Muestra el icono del menú */
+  }
+  .sidebar-header span,
+  .menu-item span,
+  .submenu-item span,
+  .sidebar-footer span {
+    opacity: 0; /* Oculta los textos por defecto */
+  }
+  .sidebar:hover .sidebar-header span,
+  .sidebar:hover .menu-item span,
+  .sidebar:hover .submenu-item span,
+  .sidebar:hover .sidebar-footer span {
+    opacity: 1; /* Muestra los textos al pasar el ratón */
+  }
+  /*.sidebar-footer img {
+      display: none; // Oculta el icono de cerrar menú por defecto 
+  }*/
+  .sidebar:hover .sidebar-footer img {
+    display: inline; /* Muestra el icono al pasar el ratón */
+  }
+}
 header {
   background-color: #F4F2EF;
   height: 70px;
@@ -814,9 +844,9 @@ p {
     height: 30px;
     font-size: 12px;
   }
-  .sidebar {
-    visibility: hidden;
-  }
+  /*.sidebar {
+      visibility: hidden;
+  }*/
   .carousel-container {
     height: 60%;
     width: 94%;
