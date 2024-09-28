@@ -1,0 +1,63 @@
+.head-txt {
+    font-size: 1.3rem;
+    margin: 55px auto;
+    color: #8A82FF;
+}
+
+.items-inside {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin: 55px 55px 30px 55px;
+}
+
+.img-item {
+    text-align: center;
+    //background-color: #ccc;
+    width: 180px;
+    height: 150px;
+}
+
+.img-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ubicanos {
+    margin: 0px;
+    font-size: 2.5rem;
+}
+
+.txt-content {
+    font-size: 1.5rem;
+    color: #646464;
+}
+
+.butt-items {
+    display: flex;
+    gap: 30px;
+    margin: 0 55px 55px 55px;
+}
+
+.tour {
+    background-color:  #8A82FF;
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    width: 150px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.punter {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+}
+
+.punter img {
+    width: 100%;
+    height: auto;
+}

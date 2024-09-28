@@ -1,0 +1,789 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Madetommy-Medium";
+  src: url("/Sitio-Web-Bomberos/assets/fonts/MADETOMMY-Medium.otf"), format("otf");
+}
+@font-face {
+  font-family: "Madetommy";
+  src: url("/Sitio-Web-Bomberos/assets/fonts/MADETOMMY.otf"), format("otf");
+}
+.menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar {
+  width: 60px;
+  height: 86%;
+  background-color: rgba(46, 50, 61, 0.8);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  position: fixed;
+  left: 20px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.sidebar:hover {
+  width: 300px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  padding: 18px 13px;
+  transition: all 0.3s ease;
+}
+
+.sidebar-header img {
+  height: 35px;
+  width: 40px;
+  border-radius: 10px;
+  margin-right: 14px;
+}
+
+.sidebar-header span {
+  font-family: "Madetommy";
+  font-size: 17px;
+  color: #FFFFFF;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar:hover .sidebar-header span {
+  opacity: 1;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #717A80;
+  font-family: "Madetommy";
+  font-size: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item a {
+  color: #717A80; /* Color gris por defecto para todos los enlaces */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Añade una transición suave al color */
+}
+
+.menu-item:hover a {
+  color: #FFFFFF; /* Color blanco para los enlaces al pasar el ratón por el contenedor */
+}
+
+.menu-item.active a {
+  color: #FFFFFF; /* Color blanco para el enlace "Inicio" (activo) */
+}
+
+.menu-item:hover {
+  background-color: rgba(160, 171, 175, 0.8);
+  color: #FFFFFF;
+}
+
+.menu-item.active {
+  background-color: rgba(138, 130, 255, 0.5019607843);
+  color: #FFFFFF;
+}
+
+.menu-item img {
+  margin-right: 20px;
+  font-size: 24px;
+}
+
+.menu-item span {
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar:hover .menu-item span {
+  opacity: 1;
+}
+
+.submenu {
+  background-color: rgba(23, 23, 30, 0.8);
+  padding: 10px 7px;
+  border-radius: 10px;
+  margin: 0 10px 20px 10px;
+}
+
+.submenu-item {
+  display: flex;
+  align-items: center;
+  color: #717A80;
+  font-family: "Madetommy";
+  font-size: 17px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.submenu-item img {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.submenu-item span {
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.submenu-item span:hover {
+  color: #FFFFFF;
+}
+
+.sidebar:hover .submenu-item span {
+  opacity: 1;
+}
+
+.sidebar-footer {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+  color: #717A80;
+  font-family: "Madetommy";
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.sidebar-footer:hover {
+  color: #FFFFFF;
+}
+
+.sidebar-footer img {
+  margin-right: 20px;
+  font-size: 20px;
+  transition: margin-right 0.3s ease;
+}
+
+.sidebar-footer span {
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar:hover .sidebar-footer span {
+  opacity: 1;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.menu-icon-2 {
+  width: 25px;
+  height: 25px;
+}
+
+/* Reset básico para asegurar consistencia */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+.bloque-1 {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Madetommy";
+  background-image: linear-gradient(to top, rgb(23, 23, 30), rgba(23, 23, 30, 0.7)), url("/Sitio-Web-Bomberos/assets/img/fondo-bloque-2.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos del contenedor principal */
+main {
+  width: 80%;
+  max-width: 1200px;
+  color: #FFFFFF;
+}
+
+/* Estilos del título principal */
+main h1 {
+  font-family: "Madetommy-Medium";
+  font-size: 3em;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+main h3 {
+  color: #C9D8DD;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+/* Contenedor de título y botón */
+.title-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos del botón */
+.title-button button {
+  background-color: #8A82FF;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #FFFFFF;
+  font-family: "Madetommy";
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.title-button button:hover {
+  background-color: #7367f0;
+}
+
+/* Contenedor de las tarjetas */
+.card-container {
+  display: flex;
+  gap: 2%;
+}
+
+/* Estilos de las tarjetas individuales */
+.card {
+  position: relative;
+  width: 32%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+/* Estilos del pie de foto */
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  color: #717A80;
+  padding: 10px;
+  text-align: center;
+  opacity: 0; /* Oculto por defecto */
+  transform: translateY(100%); /* Desplazado hacia abajo por defecto */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .caption {
+  opacity: 1; /* Aparece al hacer hover */
+  transform: translateY(0); /* Se desplaza a su posición original */
+}
+
+.caption h4 {
+  margin-bottom: 5px;
+  font-family: "Madetommy-Medium";
+  color: #2E323D;
+}
+
+.caption p {
+  margin: 0;
+  font-family: "Madetommy";
+}
+
+.bloque-2 {
+  background-color: #17171E;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.gallery div {
+  display: flex;
+  gap: 15px;
+  perspective: 10000px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05) rotateY(10deg);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Section Specific Styles */
+.top-gallery {
+  height: 50%;
+}
+
+.top-gallery img {
+  width: 50%;
+}
+
+.center-gallery {
+  height: 30%;
+}
+
+.center-gallery img {
+  width: 33%;
+}
+
+.footer-gallery {
+  height: 20%;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.footer-gallery .gallery-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48%;
+  height: 100%;
+  padding: 15px;
+  background-color: #1F2129;
+  color: #C9D8DD;
+  border-radius: 15px;
+  font-family: "Madetommy";
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.footer-gallery .gallery-link:hover {
+  background-color: #2E323D;
+  transform: scale(1.1) rotate(-2.5deg);
+  border: 2px solid #8A82FF;
+  transition: transform 0.3s ease, border-color 0.5s ease;
+}
+
+.bloque-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #17171E;
+  padding: 20px;
+}
+
+main-b3 {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(-45deg, #699AE7, #6BECAC);
+  background-size: cover;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #B4E8D1;
+}
+
+.text-header h2 {
+  font-size: 2em;
+  font-family: "Madetommy-Medium";
+  color: #2E323D;
+  margin-bottom: 20px;
+}
+
+.manual-button {
+  background-color: #FF5F56;
+  border: none;
+  padding: 10px 20px;
+  color: #FFFFFF;
+  border-radius: 25px;
+  font-family: "Madetommy";
+  font-size: 1em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.manual-button img {
+  height: 30px;
+  width: 30px;
+}
+
+.image-header img {
+  height: 100%;
+  width: 120px;
+  -webkit-mask-image: linear-gradient(to right bottom, #699AE7 80%, transparent);
+          mask-image: linear-gradient(to right bottom, #699AE7 80%, transparent);
+  box-shadow: none;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.cube {
+  background-color: #333;
+  border-radius: 15px;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cube img {
+  max-width: 50px;
+  height: auto;
+}
+
+.cube p {
+  font-family: "Madetommy";
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+#cube1 {
+  background-color: #41433D;
+  border-color: #56554E;
+  transition: transform 0.3s ease, border-color 0.5s ease;
+}
+
+#cube1:hover {
+  transform: scale(1.1) rotate(-2.5deg);
+  border-color: #A09A72;
+}
+
+#cube2 {
+  background-color: #413B3D;
+  border-color: #564A4F;
+  transition: transform 0.3s ease, border-color 0.5s ease;
+}
+
+#cube2:hover {
+  transform: scale(1.1) rotate(-2.5deg);
+  border-color: #A0667E;
+}
+
+#cube3 {
+  background-color: #413F3D;
+  border-color: #56504E;
+  transition: transform 0.3s ease, border-color 0.5s ease;
+}
+
+#cube3:hover {
+  transform: scale(1.1) rotate(-2.5deg);
+  border-color: #A07561;
+}
+
+#cube4 {
+  background-color: #413A3E;
+  border-color: #564950;
+  transition: transform 0.3s ease, border-color 0.5s ease;
+}
+
+#cube4:hover {
+  transform: scale(1.1) rotate(-2.5deg);
+  border-color: #755C69;
+}
+
+#cube5 {
+  background-color: #2F434E;
+  border-color: #374C5A;
+  transition: transform 0.3s ease, border-color 0.5s ease;
+}
+
+#cube5:hover {
+  transform: scale(1.1) rotate(-2.5deg);
+  border-color: #6187A0;
+}
+
+#cube6 {
+  background-color: #414A4C;
+  border-color: #4D575A;
+  transition: transform 0.3s ease, border-color 0.5s ease;
+}
+
+#cube6:hover {
+  transform: scale(1.1) rotate(-2.5deg);
+  border-color: #868792;
+}
+
+.bloque-4 {
+  height: 100vh;
+  width: 100%;
+  padding: 50px 20px;
+  background-color: #17171E;
+  color: #FFFFFF;
+}
+
+p {
+  color: #C9D8DD;
+}
+
+p > span {
+  color: #FFFFFF;
+}
+
+.comentarios {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.bloque-4 h1 {
+  font-family: "Madetommy-Medium";
+  letter-spacing: 1px;
+  text-align: left;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.bloque-4 h1 span {
+  color: #8A82FF;
+}
+
+.opiniones {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.opinion {
+  background-color: #2E323D;
+  padding: 20px;
+  border-radius: 10px;
+  width: 48%;
+}
+
+.opinion p {
+  margin-bottom: 15px;
+  font-family: "Madetommy";
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+}
+
+.perfil img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.perfil h3 {
+  margin: 0;
+  font-family: "Madetommy";
+  font-size: 1.2em;
+}
+
+.perfil p {
+  margin: 0;
+  font-family: "Madetommy";
+  font-size: 0.9em;
+  color: #cccccc;
+}
+
+.usuarios {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  background-color: #2E323D;
+  padding: 10px;
+  border-radius: 60px;
+  width: 30%;
+  text-align: left;
+}
+
+.usuario img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.usuario p {
+  margin: 0;
+  font-family: "Madetommy";
+  color: #cccccc;
+  font-size: 0.9em;
+}
+
+.social {
+  background-color: #1F2129;
+  border: 2px solid #2E323D;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  width: 50%;
+  text-align: left;
+}
+
+.social:hover {
+  transform: scale(1.05) rotate(-2.5deg);
+  border: 2px solid #8A82FF;
+  transition: transform 0.3s ease, border-color 0.5s ease;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.social {
+  margin: 0;
+  padding-left: 25px;
+  font-family: "Madetommy";
+  font-size: 1.2em;
+}
+
+.social img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+  body {
+    height: 100%;
+  }
+  main h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 10%;
+  }
+  main h3 {
+    font-size: 0.8em;
+    margin-top: 8%;
+  }
+  .title-button {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .title-button h3 {
+    text-align: center;
+    font-size: 1em;
+  }
+  .title-button button {
+    width: 100%;
+    font-size: 1em;
+  }
+  .card-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .card {
+    width: 100%;
+  }
+  .card img {
+    height: auto;
+  }
+  .bloque-2 {
+    height: 100%;
+  }
+  .gallery {
+    width: 90%;
+    gap: 10px;
+  }
+  .gallery div {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .top-gallery {
+    height: auto;
+  }
+  .top-gallery img {
+    width: 100%;
+  }
+  .center-gallery {
+    height: auto;
+  }
+  .center-gallery img {
+    width: 100%;
+  }
+  .footer-gallery {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+  .footer-gallery .gallery-link {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+}/*# sourceMappingURL=labor.css.map */

@@ -1,0 +1,153 @@
+.bloque-4 {
+    height: 100vh;
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #17171E; 
+    color: #FFFFFF;
+}
+
+p {
+    color: #C9D8DD;
+}
+
+p > span {
+    color: #FFFFFF;
+}
+
+.comentarios {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bloque-4 h1 {
+    font-family: 'Madetommy-Medium';
+    letter-spacing: 1px;
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.bloque-4 h1 span {
+    color: #8A82FF;
+}
+
+// Contenedor que contiene las dos cajas de opiniones
+.opiniones {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.opinion {
+    background-color: #2E323D;
+    padding: 20px;
+    border-radius: 10px;
+    width: 48%;
+}
+
+.opinion p {
+    margin-bottom: 15px;
+    font-family: 'Madetommy';
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+}
+
+.perfil img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.perfil h3 {
+    margin: 0;
+    font-family: 'Madetommy';
+    font-size: 1.2em;
+}
+
+.perfil p {
+    margin: 0;
+    font-family: 'Madetommy';
+    font-size: 0.9em;
+    color: #cccccc;
+}
+
+// Contenedor de los perfiles de usuarios
+.usuarios {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    background-color: #2E323D;
+    padding: 10px;
+    border-radius: 60px;
+    width: 30%;
+    text-align: left;
+}
+
+.usuario img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.usuario p {
+    margin: 0;
+    font-family: 'Madetommy';
+    color: #cccccc;
+    font-size: 0.9em;
+}
+
+.social {
+    background-color: #1F2129;
+    border: 2px solid #2E323D;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: left;
+}
+
+.social:hover {
+    transform: scale(1.05) rotate(-2.5deg);
+    border: 2px solid #8A82FF;
+    transition: transform 0.3s ease, border-color 0.5s ease;
+}
+
+// Contenedor de las cajas de las redes sociales
+.socials {
+    display: flex;
+    justify-content: space-around;
+    //flex-wrap: wrap;
+    gap: 20px;
+}
+
+.social {
+    margin: 0;
+    padding-left: 25px;
+    font-family: 'Madetommy';
+    //color: #cccccc;
+    font-size: 1.2em;
+}
+
+.social img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+}

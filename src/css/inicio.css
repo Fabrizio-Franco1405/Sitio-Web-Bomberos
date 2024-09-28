@@ -1,45 +1,12 @@
 @charset "UTF-8";
-html, body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+@font-face {
+  font-family: "Madetommy-Medium";
+  src: url("/Sitio-Web-Bomberos/assets/fonts/MADETOMMY-Medium.otf"), format("otf");
 }
-
-.bloque-1 {
-  background: url("/Sitio-Web-Bomberos/assets/img/Fondo(B1)Mascara.webp");
-  margin: 0;
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  border: none;
+@font-face {
+  font-family: "Madetommy";
+  src: url("/Sitio-Web-Bomberos/assets/fonts/MADETOMMY.otf"), format("otf");
 }
-
-header {
-  background-color: #F4F2EF;
-  height: 70px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-header img {
-  height: 55px;
-  width: 55px;
-  background-color: #FFFFFF;
-  border-radius: 15px;
-}
-
-.icon-hidden {
-  visibility: hidden;
-}
-
 .menu {
   width: 100%;
   height: 100%;
@@ -49,14 +16,14 @@ header img {
 
 .sidebar {
   width: 60px;
-  height: 85%;
+  height: 86%;
   background-color: rgba(46, 50, 61, 0.8);
   border-radius: 10px;
   transition: width 0.3s ease;
   overflow: hidden;
   position: fixed;
   left: 20px;
-  margin-top: 20px;
+  margin-top: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -71,15 +38,15 @@ header img {
 .sidebar-header {
   display: flex;
   align-items: center;
-  padding: 20px 15px;
+  padding: 18px 13px;
   transition: all 0.3s ease;
 }
 
 .sidebar-header img {
   height: 35px;
-  width: 35px;
+  width: 40px;
   border-radius: 10px;
-  margin-right: 8px;
+  margin-right: 14px;
 }
 
 .sidebar-header span {
@@ -108,6 +75,20 @@ header img {
   transition: background-color 0.3s ease;
 }
 
+.menu-item a {
+  color: #717A80; /* Color gris por defecto para todos los enlaces */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Añade una transición suave al color */
+}
+
+.menu-item:hover a {
+  color: #FFFFFF; /* Color blanco para los enlaces al pasar el ratón por el contenedor */
+}
+
+.menu-item.active a {
+  color: #FFFFFF; /* Color blanco para el enlace "Inicio" (activo) */
+}
+
 .menu-item:hover {
   background-color: rgba(160, 171, 175, 0.8);
   color: #FFFFFF;
@@ -127,11 +108,6 @@ header img {
   white-space: nowrap;
   opacity: 0;
   transition: opacity 0.3s ease;
-}
-
-.menu-item a {
-  color: #FFFFFF;
-  text-decoration: none;
 }
 
 .sidebar:hover .menu-item span {
@@ -214,6 +190,26 @@ header img {
   height: 25px;
 }
 
+header {
+  background-color: #F4F2EF;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  height: 55px;
+  width: 55px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+}
+
+.icon-hidden {
+  visibility: hidden;
+}
+
 main {
   width: 60%;
   height: 150px;
@@ -232,17 +228,29 @@ main h2 {
   font-size: 1.4em;
 }
 
-@font-face {
-  font-family: "Madetommy-Medium";
-  src: url("/Sitio-Web-Bomberos/assets/fonts/MADETOMMY-Medium.otf"), format("otf");
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
-@font-face {
-  font-family: "Madetommy";
-  src: url("/Sitio-Web-Bomberos/assets/fonts/MADETOMMY.otf"), format("otf");
+
+.bloque-1 {
+  background: url("/Sitio-Web-Bomberos/assets/img/Fondo(B1)Mascara.webp");
+  margin: 0;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  border: none;
 }
+
 .content {
   width: 100%;
-  height: 100%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -293,7 +301,8 @@ main h2 {
 .image-item img {
   width: 32%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .buttons {
@@ -330,7 +339,7 @@ main h2 {
 
 section {
   width: 100%;
-  height: 100%;
+  height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -421,7 +430,8 @@ p {
 .image-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: transform 0.5s ease;
 }
 
@@ -488,82 +498,6 @@ p {
   cursor: pointer;
 }
 
-/* Establecemos el fondo y todas las propiedades para la segunda pantalla 
-.bloque-3 {
-    width: 100%;
-    height: 100vh;
-    background-color: #17171E;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    background-attachment: fixed;
-}
-
-// Contenedor Padre main que contiene los 3 contenedores de bloques de texto
-.main-container-3 {
-    margin: auto;
-    border: 2px solid white;
-    width: 90%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-}
-
-// Contenedor de bloque padre y principal que contiene dos contenedores de texto 
-.block-container {
-    display: flex;
-    width: 100%;
-    height: 90%;
-}
-
-//Primer contenedor de bloque de texto
-.block-text-1 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.block-text-1 h2 {
-    font-family: 'Madetommy';
-    color: #8A82FF;
-    text-align: center;
-}
-
-.block-text-1 fieldset {
-    //margin-top: 7%;
-    width: 70%;
-    height: 60%;
-}
-
-.block-text-1 p {
-    font-family: 'Madetommy';
-    color: #9EA4A8;
-}
-
-//Segundo contenedor de bloque de texto
-.block-text-2 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.block-text-child {
-    width: 80%;
-    height: 70%;
-    background-color: #2E323D;
-    border-radius: 15px;
-}
-
-// Contenedor que contiene un botón
-.block-button {
-    width: 100%;
-    height: 10%;
-}
-*/
 /* Establecemos el fondo y todas las propiedades para la segunda pantalla */
 .bloque-3 {
   width: 100%;
@@ -915,7 +849,8 @@ p {
   }
   .image-card img {
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   /* Ajustamos el tamaño de la capa de texto */
   .image-card .overlay {
@@ -1056,3 +991,140 @@ p {
     border-radius: 10px;
   }
 }
+/*@media screen and (min-width: 1680px) {
+    header {
+        height: 120px;
+    }
+
+    header img {
+        width: 70px;
+        height: 70px;
+    }
+
+    main {
+        height: 30%;
+    }
+
+    main h1 {
+        font-size: 44px;
+    }
+
+    main h2 {
+        font-size: 38px;
+    }
+
+    .sidebar {
+        width: 90px;
+    }
+
+    .sidebar:hover {
+        width: 500px;
+    }
+
+    .sidebar-header img {
+        width: 60px;
+        height: 60px;
+        margin-right: 4px;
+    }
+
+    .sidebar-header span {
+        font-size: 28px;
+        padding: 10px 20px;
+    }
+
+    .menu-item {
+        font-size: 24px;
+        padding: 17px 22px;
+    }
+
+    .menu-item img {
+        margin-right: 25px;
+        font-size: 28px;
+    }
+
+    .submenu {
+        padding: 16px 14px;
+    }
+
+    .submenu-item img {
+        font-size: 24px;
+        margin-right: 25px;
+    }
+
+    .submenu-item {
+        font-size: 24px;
+        margin-right: 25px;
+    }
+
+    .sidebar-footer {
+        font-size: 24px;
+        padding: 27px 22px;
+    }
+
+    .sidebar-footer img {
+        margin-right: 25px;
+    }
+
+    .menu-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .menu-icon-2 {
+        width: 40px;
+        height: 40px;
+    }
+
+    .content {
+        height: 100%;
+    }
+
+    .carousel-container {
+        height: 100%;
+    }
+
+    .text-buttons {
+        height: 15%;
+        font-size: 28px;
+    }
+
+    .image-item {
+        height: 70%;
+    }
+
+    .buttons {
+        height: 15%;
+    }
+
+    .arrow {
+        width: 50px;
+        height: 50px;
+    }
+
+    .expand {
+        width: 80px;
+        height: 80px;
+    }
+
+    .view-more {
+        width: 200px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 20px;
+    }
+
+    section {
+        height: 30%;
+    }
+
+    .sections-buttons {
+        width: 160px;
+        height: 120px;
+        font-size: 26px;
+    }
+
+    .sections-buttons img {
+        width: 80px;
+        height: 80px;
+    }
+}*//*# sourceMappingURL=inicio.css.map */

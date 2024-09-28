@@ -1,0 +1,209 @@
+body {margin: 0;}
+
+h2 {
+    font-family: 'Madetommy-Medium';
+}
+
+button, p {
+    font-family: 'Madetommy';
+    border: none;
+}
+
+.section-3 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr) 66px 150px 99px;
+}
+
+.header-back {
+    background-color: #F4F2EF;
+    grid-column: 1/6;
+    grid-row: 1/3;
+    display: flex;
+}
+
+.background {
+    background-color: #646464;
+    grid-column: 1/6;
+    grid-row: 3/7;
+}
+
+.item-box {
+    background-color: #fff;
+    grid-column: 2/5;
+    grid-row: 2/4;
+    
+    gap: 10px;
+    border-radius: 20px;
+}
+
+.nav-icons {
+    grid-column: 2/5;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+}
+
+.images {
+    grid-column: 2/5;
+    grid-row: 5/6;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.buttoms {
+    grid-column: 2/5;
+    grid-row: 6/7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+// Caja Principal
+.head-txt {
+    font-size: 1.3rem;
+    margin: 55px auto;
+    color: #8A82FF;
+}
+
+.items-inside {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin: 55px 55px 30px 55px;
+}
+
+.img-item {
+    text-align: center;
+    width: 180px;
+    height: 150px;
+}
+
+.img-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ubicanos {
+    margin: 0px;
+    font-size: 2.5rem;
+}
+
+.txt-content {
+    font-size: 1.5rem;
+    color: #646464;
+}
+
+.butt-items {
+    display: flex;
+    gap: 30px;
+    margin: 0 55px 55px 55px;
+}
+
+.tour {
+    background-color:  #8A82FF;
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    width: 150px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.punter {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+}
+
+.punter img {
+    width: 100%;
+    height: auto;
+}
+
+.x-butt {
+    grid-column: 1;
+    width: 55px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.x-butt img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.nav-icons > div {
+    grid-column: 2;
+    display: flex;
+    justify-content: flex-end;
+    gap: 9px;
+}
+
+.scroll-butt {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.images img {
+    width: 100%;
+    height: 50%; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+.contact {
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: white;
+    color: #8A82FF;
+    cursor: pointer;
+}
+
+.copy {
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    color: #8A82FF;
+    cursor: pointer;
+}
+
+.copy img {
+    width: 65%;
+    height: auto;
+}
+
+.last-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 66px;
+    gap: 20px;
+    background: linear-gradient(45deg, #FF9E5D, #FF5E6B, #8A82FF);
+}
+
+.section-buttom {
+    border: none;
+    border-radius: 35px;
+    height: 35px;
+    padding: 0 20px 0 20px;
+    background-color: rgba(255, 255, 255, 0.36);
+    color: white;
+    cursor: pointer;
+}

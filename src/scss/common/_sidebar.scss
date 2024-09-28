@@ -7,14 +7,14 @@
 
 .sidebar {
     width: 60px;
-    height: 85%;
+    height: 86%;
     background-color: #2E323DCC;
     border-radius: 10px;
     transition: width 0.3s ease;
     overflow: hidden;
     position: fixed;
     left: 20px;
-    margin-top: 20px;
+    margin-top: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,15 +29,15 @@
 .sidebar-header {
     display: flex;
     align-items: center;
-    padding: 20px 15px;
+    padding: 18px 13px;
     transition: all 0.3s ease;
 }
 
 .sidebar-header img {
     height: 35px;
-    width: 35px;
+    width: 40px;
     border-radius: 10px;
-    margin-right: 8px;
+    margin-right: 14px;
 }
 
 .sidebar-header span {
@@ -66,6 +66,20 @@
     transition: background-color 0.3s ease;
 }
 
+.menu-item a {
+    color: #717A80; /* Color gris por defecto para todos los enlaces */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Añade una transición suave al color */
+}
+
+.menu-item:hover a {
+    color: #FFFFFF; /* Color blanco para los enlaces al pasar el ratón por el contenedor */
+}
+
+.menu-item.active a {
+    color: #FFFFFF; /* Color blanco para el enlace "Inicio" (activo) */
+}
+
 .menu-item:hover {
     background-color: #A0ABAFCC; // #465264
     color: #FFFFFF;
@@ -85,11 +99,6 @@
     white-space: nowrap;
     opacity: 0;
     transition: opacity 0.3s ease;
-}
-
-.menu-item a {
-    color: #FFFFFF;
-    text-decoration: none;
 }
 
 .sidebar:hover .menu-item span {
@@ -172,23 +181,4 @@
 .menu-icon-2 {
     width: 25px;
     height: 25px;
-}
-
-//-------------------------------     Título principal de la página     -------------------------------//
-main {
-    width: 60%;
-    height: 150px;
-    margin-top: 30px;
-    margin-left: 8%;
-    color: #FFFFFF;
-}
-
-main h1 {
-    font-family: 'Madetommy-Medium';
-    font-size: 2em;
-}
-
-main h2 {
-    font-family: 'Madetommy';
-    font-size: 1.4em;
 }

@@ -1,0 +1,89 @@
+@media (max-width: 768px) {
+    //------------------------------------------- Inicio --------------------------------------------//
+    body {
+        height: 100%;
+    }
+
+    main h1 {
+        font-size: 2.5em;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    main h3 {
+        font-size: 0.8em;
+        margin-top: 8%;
+    }
+
+    .title-button {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .title-button h3 {
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .title-button button {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .card-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card img {
+        height: auto;
+    }
+
+    //------------------------------------------- Galería --------------------------------------------//
+    .bloque-2 {
+        height: 100%;
+    }
+
+    .gallery {
+        width: 90%; // Ajusta el ancho para pantallas más pequeñas 
+        gap: 10px; // Reduce el espacio entre los elementos 
+    }
+
+    .gallery div {
+        flex-direction: column; // Cambia la dirección de las imágenes a columna 
+        gap: 10px; // Reduce el espacio entre las imágenes 
+    }
+
+    .top-gallery {
+        height: auto; // Permite que la altura se ajuste automáticamente 
+    }
+
+    .top-gallery img {
+        width: 100%; // Hace que las imágenes ocupen todo el ancho en dispositivos pequeños
+    }
+
+    .center-gallery {
+        height: auto; // Permite que la altura se ajuste automáticamente
+    }
+
+    .center-gallery img {
+        width: 100%; // Hace que las imágenes ocupen todo el ancho en dispositivos pequeños 
+    }
+
+    .footer-gallery {
+        flex-direction: column; // Coloca los enlaces uno debajo del otro
+        height: auto;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .footer-gallery .gallery-link {
+        width: 100%; // Los enlaces ocupan todo el ancho
+        height: auto;
+        padding: 10px; // Ajusta el padding para pantallas pequeñas
+    }
+}

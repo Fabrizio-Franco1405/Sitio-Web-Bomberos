@@ -1,0 +1,454 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Madetommy-Medium";
+  src: url("/Sitio-Web-Bomberos/assets/fonts/MADETOMMY-Medium.otf"), format("otf");
+}
+@font-face {
+  font-family: "Madetommy";
+  src: url("/Sitio-Web-Bomberos/assets/fonts/MADETOMMY.otf"), format("otf");
+}
+.menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar {
+  width: 60px;
+  height: 86%;
+  background-color: rgba(46, 50, 61, 0.8);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  position: fixed;
+  left: 20px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.sidebar:hover {
+  width: 300px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  padding: 18px 13px;
+  transition: all 0.3s ease;
+}
+
+.sidebar-header img {
+  height: 35px;
+  width: 40px;
+  border-radius: 10px;
+  margin-right: 14px;
+}
+
+.sidebar-header span {
+  font-family: "Madetommy";
+  font-size: 17px;
+  color: #FFFFFF;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar:hover .sidebar-header span {
+  opacity: 1;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #717A80;
+  font-family: "Madetommy";
+  font-size: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item a {
+  color: #717A80; /* Color gris por defecto para todos los enlaces */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Añade una transición suave al color */
+}
+
+.menu-item:hover a {
+  color: #FFFFFF; /* Color blanco para los enlaces al pasar el ratón por el contenedor */
+}
+
+.menu-item.active a {
+  color: #FFFFFF; /* Color blanco para el enlace "Inicio" (activo) */
+}
+
+.menu-item:hover {
+  background-color: rgba(160, 171, 175, 0.8);
+  color: #FFFFFF;
+}
+
+.menu-item.active {
+  background-color: rgba(138, 130, 255, 0.5019607843);
+  color: #FFFFFF;
+}
+
+.menu-item img {
+  margin-right: 20px;
+  font-size: 24px;
+}
+
+.menu-item span {
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar:hover .menu-item span {
+  opacity: 1;
+}
+
+.submenu {
+  background-color: rgba(23, 23, 30, 0.8);
+  padding: 10px 7px;
+  border-radius: 10px;
+  margin: 0 10px 20px 10px;
+}
+
+.submenu-item {
+  display: flex;
+  align-items: center;
+  color: #717A80;
+  font-family: "Madetommy";
+  font-size: 17px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.submenu-item img {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.submenu-item span {
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.submenu-item span:hover {
+  color: #FFFFFF;
+}
+
+.sidebar:hover .submenu-item span {
+  opacity: 1;
+}
+
+.sidebar-footer {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+  color: #717A80;
+  font-family: "Madetommy";
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.sidebar-footer:hover {
+  color: #FFFFFF;
+}
+
+.sidebar-footer img {
+  margin-right: 20px;
+  font-size: 20px;
+  transition: margin-right 0.3s ease;
+}
+
+.sidebar-footer span {
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar:hover .sidebar-footer span {
+  opacity: 1;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.menu-icon-2 {
+  width: 25px;
+  height: 25px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F4F2EF;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-container {
+  width: 60%;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header-container img {
+  height: 150px;
+  width: auto;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+h1 {
+  font-family: "Madetommy-Medium";
+  font-size: 2.5em;
+  color: #17171E;
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: "Madetommy";
+  font-size: 1.2em;
+  color: #717A80;
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  background-color: #FF9E5D;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-family: "Madetommy";
+  font-size: 1.2em;
+  color: #FFFFFF;
+}
+
+.footer-text {
+  text-align: left;
+  width: 100%;
+}
+
+h3 {
+  font-family: "Madetommy";
+  color: #717A80;
+  margin-bottom: 10px;
+}
+
+.section-1 {
+  width: 60%;
+  height: 20%;
+  display: flex;
+  gap: 20px;
+}
+
+.bloques {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 15px;
+}
+
+.card-1, .card-2 {
+  width: 48%;
+  height: 100%;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-1 img, .card-2 img {
+  width: 50%;
+  height: 80%;
+}
+
+.card-1 p, .card-2 p {
+  font-size: 1em;
+  color: #17171E;
+}
+
+.card-1:hover, .card-2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.section-2 {
+  width: 60%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-2-fondo {
+  width: 100%;
+  height: 90%;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+  display: flex;
+  gap: 15px;
+  overflow-x: scroll;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #FF9E5D;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    visibility: hidden;
+  }
+  body {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    height: 100%;
+  }
+  .main-container {
+    width: 100%; /* Usar todo el ancho disponible */
+    padding: 15px; /* Reducir el padding */
+  }
+  .header-container {
+    flex-direction: column; /* Alinear verticalmente */
+    align-items: center;
+    gap: 15px; /* Añadir espacio entre elementos */
+  }
+  .header-container img {
+    height: 100px; /* Reducir el tamaño de la imagen */
+  }
+  .text {
+    text-align: center; /* Centrar el texto */
+    width: 100%;
+  }
+  h1 {
+    font-size: 2em; /* Reducir el tamaño del título */
+  }
+  p {
+    font-size: 1em; /* Reducir el tamaño del subtítulo */
+  }
+  .footer-container {
+    flex-direction: column; /* Alinear verticalmente */
+    align-items: center;
+    gap: 10px; /* Añadir espacio entre elementos */
+    margin-top: 15px;
+  }
+  button {
+    width: 130px; /* Reducir el ancho del botón */
+    height: 40px; /* Reducir la altura del botón */
+    font-size: 1em; /* Reducir el tamaño del texto del botón */
+  }
+  .section-1 {
+    width: 100%; /* Usar todo el ancho disponible */
+    flex-direction: column; /* Alinear verticalmente */
+    gap: 15px; /* Añadir espacio entre bloques */
+    align-items: center;
+  }
+  .bloques {
+    width: 100%; /* Usar todo el ancho disponible */
+  }
+  .cards-container {
+    flex-direction: row; /* Alinear horizontalmente */
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 10px; /* Añadir espacio entre tarjetas */
+  }
+  .card-1, .card-2 {
+    width: 48%; /* Usar casi la mitad del contenedor */
+    padding: 10px; /* Reducir el padding */
+  }
+  .card-1 img, .card-2 img {
+    width: 60%; /* Ajustar el tamaño de las imágenes */
+    height: auto; /* Ajustar la altura automáticamente */
+  }
+  .section-2 {
+    width: 100%; /* Usar todo el ancho disponible */
+    gap: 10px; /* Añadir espacio entre bloques */
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-2-fondo {
+    width: 100%;
+    padding: 15px; /* Reducir el padding */
+  }
+  .carousel {
+    gap: 10px;
+    overflow-x: auto;
+  }
+  .carousel-item {
+    width: 60px; /* Reducir el tamaño de los elementos del carrusel */
+    height: 60px; /* Reducir el tamaño de los elementos del carrusel */
+  }
+}/*# sourceMappingURL=ayuda.css.map */
