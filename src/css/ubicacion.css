@@ -131,6 +131,15 @@
   cursor: pointer;
 }
 
+.submenu-item a {
+  text-decoration: none;
+  color: #717A80;
+}
+
+.submenu-item a:hover {
+  color: #FFFFFF;
+}
+
 .submenu-item img {
   margin-right: 20px;
   font-size: 20px;
@@ -188,6 +197,10 @@
 .menu-icon-2 {
   width: 25px;
   height: 25px;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
