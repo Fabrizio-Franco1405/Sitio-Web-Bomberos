@@ -232,4 +232,265 @@ a {
   .sidebar:hover .sidebar-footer img {
     display: inline; /* Muestra el icono al pasar el ratón */
   }
+}
+.footer-4 {
+  background-color: #2c2f35;
+  width: 100%;
+  height: 30vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-top {
+  width: 100%;
+  height: 25%;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #FF9E5D, #FF5E6B, #8A82FF);
+}
+
+.footer-top h2 {
+  color: #FFFFFF;
+  font-family: "Madetommy-Medium";
+  font-size: 2em;
+  text-align: start;
+  margin: auto 5%;
+}
+
+.footer-center {
+  background-color: #2c2f35;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  gap: 10%;
+}
+
+.footer-center h2 {
+  font-family: "Madetommy-Medium";
+  letter-spacing: 1px;
+  font-size: 1.4em;
+  margin: auto 5%;
+  text-align: start;
+  color: #C9D8DD;
+}
+
+.footer-links {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.footer-links a {
+  font-family: "Madetommy";
+  text-decoration: none;
+  color: #9EA4A8;
+}
+
+.footer-links a:hover {
+  color: #FFFFFF;
+}
+
+.footer-bottom {
+  background-color: #17171E;
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logos {
+  margin-left: 5%;
+}
+
+.footer-bottom img {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.footer-bottom p {
+  font-family: "Madetommy";
+  color: #C9D8DD;
+}
+
+.footer-social {
+  margin-right: 1%;
+}
+
+.footer-social img {
+  width: 30px;
+  height: 30px;
+}
+
+/* ////////////// TEXT   ///////////////// */
+h2 {
+  font-size: 2.4rem;
+  color: #F9F8F2;
+}
+
+.strong-p {
+  font-size: 1.5rem;
+  color: #9EA4A8;
+  font-weight: bold;
+}
+
+.normal-p {
+  font-size: 1.1rem;
+  margin: 25px 0 10px 0;
+  color: #9EA4A8;
+}
+
+/* ////////////// BUTTONS   ////////////// */
+.button {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 36px;
+  border-radius: 36px;
+  text-decoration: none;
+  font-weight: 450;
+}
+
+.button:active {
+  background: #5e5e6b;
+}
+
+.button-link {
+  background-color: #8A82FF;
+  color: white;
+}
+
+/* Global ________________________________ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: #F4F2EF;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background: #FFF;
+}
+
+/* Block 1 ______________________________ */
+main {
+  width: 100%;
+  display: flex;
+  padding: 3vw 6vw;
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: 2.5vw;
+  align-items: flex-end;
+}
+
+section {
+  display: flex;
+  gap: 1vw;
+  min-width: 450px;
+  max-width: 1300px;
+  margin-left: 100px;
+  height: 350px;
+  background: #2E323D;
+  color: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+section .img-area {
+  width: 66%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+section img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translate(-1px);
+}
+
+section .img-area .gradient-img {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(to left, #2E323D, transparent);
+}
+
+section article {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 2vw;
+  box-sizing: border-box;
+  gap: 10px;
+  align-items: space-between;
+}
+
+section article .txt-area {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+
+section article .btn-area {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* /////////////// MEDIAS /////////////// */
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+    gap: 0;
+    min-width: 100px;
+    max-width: 100%;
+    height: 666px;
+    margin-left: 0;
+  }
+  section .img-area {
+    width: 100%;
+    height: 100%;
+  }
+  section img {
+    transform: translate(0, -2px);
+  }
+  section .img-area .gradient-img {
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    right: 0;
+    background-image: linear-gradient(to top, #2E323D, transparent);
+  }
+  section article {
+    height: 50%;
+    padding: 4vw;
+    gap: 10px;
+  }
 }/*# sourceMappingURL=mision-y-vision.css.map */
