@@ -1,0 +1,35 @@
+/* ////////////// TEXT   ///////////////// */
+h2 {
+    font-family: 'Madetommy-Medium';
+    font-size: 2.4rem;
+    color: #F9F8F2;
+}
+.strong-p {
+    font-family: 'Madetommy';
+    font-size: 1.5rem;
+    color: #9EA4A8;
+    font-weight: bold;
+}
+.normal-p {
+    font-family: 'Madetommy';
+    font-size: 1.1rem; margin: 25px 0 10px 0;
+    color: #9EA4A8;
+}
+
+/* ////////////// BUTTONS   ////////////// */
+.button {
+    display: flex; align-items: center;
+    padding: 0 20px;
+    height: 36px;
+    border-radius: 36px;
+    text-decoration: none;
+    font-weight: 450;
+    font-family: 'Madetommy';
+}
+.button:active {
+    background: #5e5e6b;
+}
+.button-link {
+    background-color: #8A82FF;
+    color: white;
+}

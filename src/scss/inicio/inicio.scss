@@ -1,6 +1,8 @@
 @import '../common/fonts';
 @import '../common/sidebar';
 @import '../common/colors';
+@import '../common/header';
+@import '../common/footer';
 @import 'bloque1-header';
 @import 'bloque1-main';
 @import 'bloque1-content';
@@ -9,5 +11,4 @@
 @import 'bloque2';
 @import 'bloque3';
 @import 'bloque4-main';
-@import '../common/footer';
 @import 'media-queries';

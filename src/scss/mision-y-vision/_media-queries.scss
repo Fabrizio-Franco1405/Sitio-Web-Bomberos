@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+
+    section {
+        flex-direction: column; gap: 0;
+        min-width: 100px; max-width: 100%;
+        height: 666px; margin-left: 0;
+    }
+    
+    section .img-area {
+        width: 100%; height: 100%;
+    }
+
+    section img {
+        transform: translate(0, -2px);
+    }
+    
+    section .img-area .gradient-img {
+        width: 100%; height: 50%;
+        top: 50%; right: 0;
+        background-image: linear-gradient(to top, #2E323D, transparent);
+    }
+    
+    section article {
+        height: 50%; padding: 4vw; gap: 10px;
+    }
+}

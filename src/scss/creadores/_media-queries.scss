@@ -1,103 +1,30 @@
-@media only screen and (max-width: 768px) {
-    .sidebar {
-        visibility: hidden;
+@media (max-width: 768px) {
+    main {
+        gap: 100px;
     }
-
-    body {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-        height: 100%;
+    .block {
+        display: flex; flex-direction: column;
+        margin-left: 0; gap: 6vw;
+        min-width: 100px; max-width: 100%;
     }
-
-    .main-container {
-        width: 100%; /* Usar todo el ancho disponible */
-        padding: 15px; /* Reducir el padding */
+    
+    /* Block 1-2 ____________________________ */
+    .block section {
+        gap: 6vw;
+        grid-template-columns: 1fr;
     }
-
-    .header-container {
-        flex-direction: column; /* Alinear verticalmente */
-        align-items: center;
-        gap: 15px; /* Añadir espacio entre elementos */
+    
+    .block section article {
+        border-radius: 10px;
+        padding: 4vw;
     }
-
-    .header-container img {
-        height: 100px; /* Reducir el tamaño de la imagen */
+    .img-area {
+        aspect-ratio: 4/2;
+        border-radius: 6px;
     }
-
-    .text {
-        text-align: center; /* Centrar el texto */
-        width: 100%;
-    }
-
+    
     h1 {
-        font-size: 2em; /* Reducir el tamaño del título */
-    }
-
-    p {
-        font-size: 1em; /* Reducir el tamaño del subtítulo */
-    }
-
-    .footer-container {
-        flex-direction: column; /* Alinear verticalmente */
-        align-items: center;
-        gap: 10px; /* Añadir espacio entre elementos */
-        margin-top: 15px;
-    }
-
-    button {
-        width: 130px;  /* Reducir el ancho del botón */
-        height: 40px;  /* Reducir la altura del botón */
-        font-size: 1em; /* Reducir el tamaño del texto del botón */
-    }
-
-    .section-1 {
-        width: 100%; /* Usar todo el ancho disponible */
-        flex-direction: column; /* Alinear verticalmente */
-        gap: 15px; /* Añadir espacio entre bloques */
-        align-items: center;
-    }
-
-    .bloques {
-        width: 100%;  /* Usar todo el ancho disponible */
-    }
-
-    .cards-container {
-        flex-direction: row; /* Alinear horizontalmente */
-        justify-content: space-evenly;
         width: 100%;
-        gap: 10px; /* Añadir espacio entre tarjetas */
-    }
-
-    .card-1, .card-2 {
-        width: 48%; /* Usar casi la mitad del contenedor */
-        padding: 10px; /* Reducir el padding */
-    }
-
-    .card-1 img, .card-2 img {
-        width: 60%;  /* Ajustar el tamaño de las imágenes */
-        height: auto; /* Ajustar la altura automáticamente */
-    }
-
-    .section-2 {
-        width: 100%; /* Usar todo el ancho disponible */
-        gap: 10px; /* Añadir espacio entre bloques */
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .section-2-fondo {
-        width: 100%;
-        padding: 15px; /* Reducir el padding */
-    }
-
-    .carousel {
-        gap: 10px;
-        overflow-x: auto;
-    }
-
-    .carousel-item {
-        width: 60px;  /* Reducir el tamaño de los elementos del carrusel */
-        height: 60px;  /* Reducir el tamaño de los elementos del carrusel */
+        font-size: 1.9rem;
     }
 }
