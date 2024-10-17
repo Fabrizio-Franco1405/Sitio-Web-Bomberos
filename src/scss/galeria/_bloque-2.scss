@@ -35,7 +35,6 @@
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5); // Sombra para el efecto 3D
 }
 
-/* Section Specific Styles */
 .top-gallery {
     height: 50%;
 }
@@ -52,12 +51,10 @@
     width: 33%; // Se asegura que cada imagen ocupe un tercio
 }
 
-// Footer Gallery Styles
 .footer-gallery {
     height: 20%;
     justify-content: space-between;
     align-items: center;
-    //margin-bottom: 20px;
     padding-bottom: 20px;
 }
 

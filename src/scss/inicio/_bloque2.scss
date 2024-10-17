@@ -1,4 +1,3 @@
-/* Establecemos el fondo y todas las propiedades para la segunda pantalla */
 .bloque-2 {
     width: 100%;
     height: 100vh;
@@ -9,17 +8,13 @@
     background-attachment: fixed;
 }
 
-/* Establecemos las propiedades del contenedor principal */
 .main-container-2 {
-    //background-color: #FFFFFF;
     border-radius: 15px;
     margin: auto;
     width: 60%;
     height: 70%;
-    //border: 2px solid black;
 }
 
-/* Valores para el título principal */
 .main-container-2 h1 {
     font-family: 'Madetommy';
     font-size: 2em;
@@ -27,7 +22,6 @@
     margin: 10px 15px;
 }
 
-/* Valores para el subtítulo */
 .main-container-2 h3 {
     font-family: 'Madetommy';
     color: #9EA4A8;
@@ -35,7 +29,6 @@
     margin: 10px 15px;
 }
 
-/* Primer contenedor donde van los títulos */
 .title-container {
     width: 100%;
     height: 20%;
@@ -43,7 +36,6 @@
     margin: 0;
 }
 
-/* Segundo contenedor donde van las imágenes */
 .image-elements {
     display: flex;
     gap: 8%;
@@ -52,13 +44,11 @@
     z-index: 1;
 }
 
-/* Contenedor de cada imagen y su overlay */
 .image-card {
     position: relative;
     width: 28%;
     height: 100%;
     overflow: hidden;
-    //border-radius: 10px;
 }
 
 .image-card img {
@@ -100,7 +90,6 @@
     font-size: 0.9em;
 }
 
-/* Efecto hover */
 .image-card:hover img {
     transform: scale(1.1);
 }
@@ -109,7 +98,6 @@
     transform: translateY(0);
 }
 
-/* Tercer contenedor donde va el botón */
 .footer-container {
     width: 100%;
     height: 20%;

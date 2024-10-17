@@ -49,41 +49,41 @@
     }
 
     .gallery {
-        width: 90%; // Ajusta el ancho para pantallas más pequeñas 
-        gap: 10px; // Reduce el espacio entre los elementos 
+        width: 90%;
+        gap: 10px;
     }
 
     .gallery div {
-        flex-direction: column; // Cambia la dirección de las imágenes a columna 
-        gap: 10px; // Reduce el espacio entre las imágenes 
+        flex-direction: column;
+        gap: 10px;
     }
 
     .top-gallery {
-        height: auto; // Permite que la altura se ajuste automáticamente 
+        height: auto;
     }
 
     .top-gallery img {
-        width: 100%; // Hace que las imágenes ocupen todo el ancho en dispositivos pequeños
+        width: 100%;
     }
 
     .center-gallery {
-        height: auto; // Permite que la altura se ajuste automáticamente
+        height: auto;
     }
 
     .center-gallery img {
-        width: 100%; // Hace que las imágenes ocupen todo el ancho en dispositivos pequeños 
+        width: 100%;
     }
 
     .footer-gallery {
-        flex-direction: column; // Coloca los enlaces uno debajo del otro
+        flex-direction: column;
         height: auto;
         gap: 10px;
         padding-bottom: 10px;
     }
 
     .footer-gallery .gallery-link {
-        width: 100%; // Los enlaces ocupan todo el ancho
+        width: 100%;
         height: auto;
-        padding: 10px; // Ajusta el padding para pantallas pequeñas
+        padding: 10px;
     }
 }

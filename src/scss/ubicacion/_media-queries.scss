@@ -13,7 +13,6 @@
         box-sizing: border-box;
     }
     
-     /* Estilo interno de main-box */
     .img {
         grid-column: 1;
         grid-row: 1;
@@ -55,7 +54,6 @@
         font-size: .8rem;
     }
     
-    /* */
     .eyebrow-txt1 {
         grid-column: 2;
         display: flex;
@@ -69,7 +67,6 @@
         grid-row: 5;
     }
     
-    /* Estilo interno de eyebrows */
     .category {
         width: 50%;
     }
@@ -89,7 +86,6 @@
         margin: 0 0 .4rem 0;
     }
     
-    /* Estilo interno de sections */
     .box-line {
         display: flex;
         gap: 10px;
@@ -133,8 +129,6 @@
         gap: 5px;
     }
     
-    /* */
-    
     .eyebrow-txt2 {
         grid-area: eyebrow-txt2;
         display: flex;
@@ -147,7 +141,6 @@
         grid-area: section2;
     }
     
-    /* final box */
     .box2 {
         display: grid;
         grid-template-columns: 1fr;
@@ -180,5 +173,4 @@
         text-align: center;
         color: gray;
     }
-    
 }

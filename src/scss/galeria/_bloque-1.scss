@@ -1,11 +1,10 @@
-/* Reset básico para asegurar consistencia */
+//-------------------------------------- Estilos para Galería ---------------------------------------//
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos generales del cuerpo */
 .bloque-1 {
     width: 100%;
     min-height: 100vh;
@@ -19,15 +18,12 @@
     align-items: center;
 }
 
-/* Estilos del contenedor principal */
 main {
     width: 80%;
     max-width: 1200px;
     color: #FFFFFF;
-    //text-align: center;
 }
 
-/* Estilos del título principal */
 main h1 {
     font-family: 'Madetommy-Medium';
     font-size: 3em;
@@ -41,7 +37,6 @@ main h3 {
     letter-spacing: 1px;
 }
 
-/* Contenedor de título y botón */
 .title-button {
     display: flex;
     justify-content: space-between;
@@ -49,7 +44,6 @@ main h3 {
     margin-bottom: 20px;
 }
 
-/* Estilos del botón */
 .title-button button {
     background-color: #8A82FF;
     width: 150px;
@@ -68,13 +62,11 @@ main h3 {
     background-color: #7367f0;
 }
 
-/* Contenedor de las tarjetas */
 .card-container {
     display: flex;
     gap: 2%;
 }
 
-/* Estilos de las tarjetas individuales */
 .card {
     position: relative;
     width: 32%;
@@ -105,19 +97,18 @@ main h3 {
     bottom: 0;
     left: 0;
     width: 100%;
-    //background: rgba(0, 0, 0, 0.7);
     background-color: #FFFFFF;
     color: #717A80;
     padding: 10px;
     text-align: center;
-    opacity: 0;  /* Oculto por defecto */
-    transform: translateY(100%);  /* Desplazado hacia abajo por defecto */
+    opacity: 0; 
+    transform: translateY(100%); 
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .card:hover .caption {
-    opacity: 1;  /* Aparece al hacer hover */
-    transform: translateY(0);  /* Se desplaza a su posición original */
+    opacity: 1; 
+    transform: translateY(0);
 }
 
 .caption h4 {

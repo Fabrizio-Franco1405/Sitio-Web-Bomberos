@@ -69,7 +69,6 @@
         font-size: 1.2em;
     }
 
-    /* Ajustamos las imágenes */
     .image-elements {
         flex-direction: column;
         gap: 10px;
@@ -86,12 +85,10 @@
         object-fit: cover;
     }
 
-    /* Ajustamos el tamaño de la capa de texto */
     .image-card .overlay {
         height: 40%;
     }
 
-    /* Ajustamos el botón en el pie de página */
     .footer-container {
         justify-content: center;
         height: auto;
@@ -109,30 +106,30 @@
     // Ajuste del contenedor principal
     .main-container-3 {
         width: 95%;
-        height: 80%; /* Permite que la altura se ajuste al contenido */
+        height: 80%;
     }
 
     // Ajuste del contenedor de bloques de texto para apilar los elementos en columna
     .block-container {
         flex-direction: column;
         align-items: center;
-        height: 65%; /* Ajusta la altura según el contenido */
+        height: 65%;
     }
 
     // Ajuste del primer bloque de texto
     .block-text-1 {
         width: 100%;
-        padding-right: 0; /* Elimina el padding para un mejor ajuste en móviles */
-        margin-bottom: 20px; /* Añade espacio debajo del primer bloque */
-        text-align: center; /* Centra el texto para mejor legibilidad */
+        padding-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
     }
 
     .block-text-1 h2 {
-        font-size: 28px; /* Reduce el tamaño de la fuente para pantallas más pequeñas */
+        font-size: 28px;
     }
 
     .block-text-1 p {
-        font-size: 16px; /* Ajusta el tamaño de la fuente para el texto descriptivo */
+        font-size: 16px;
     }
 
     // Ajuste del segundo bloque de texto
@@ -143,35 +140,35 @@
 
     .block-text-child {
         width: 100%;
-        padding: 15px; /* Ajusta el padding para mantener un buen margen en pantallas pequeñas */
+        padding: 15px;
     }
 
     .text-box p {
-        font-size: 16px; /* Reduce ligeramente el tamaño de la fuente para mejor legibilidad en móviles */
+        font-size: 16px;
     }
 
     // Ajuste de la imagen del perfil
     .perfil img {
         width: 40px;
-        height: 40px; /* Reduce el tamaño de la imagen para que se ajuste a pantallas pequeñas */
+        height: 40px;
     }
 
     .perfil div p {
-        font-size: 16px; /* Ajusta el tamaño del nombre */
+        font-size: 16px;
     }
 
     .perfil div span {
-        font-size: 12px; /* Ajusta el tamaño del cargo */
+        font-size: 12px;
     }
 
     // Ajuste del botón en la parte inferior
     .block-button {
-        justify-content: center; /* Centra el botón en pantallas pequeñas */
-        margin-top: 20px; /* Añade un margen superior para separar el botón del contenido */
+        justify-content: center;
+        margin-top: 20px;
     }
 
     .block-button a {
-        font-size: 16px; /* Ajusta el tamaño de la fuente del botón */
+        font-size: 16px;
     }
 
     //----------------------------------- Ajustes para el Bloque 4 -----------------------------------//
@@ -204,11 +201,11 @@
     .card-4 {
         max-width: 100%;
         padding: 15px;
-        box-shadow: none; /* Quita la sombra para un diseño más plano en pantallas pequeñas */
+        box-shadow: none;
     }
 
     .card-4 img {
-        max-width: 80%; /* Haz la imagen más grande en relación al contenedor */
+        max-width: 80%;
     }
 
     .footer-4 {
@@ -266,141 +263,3 @@
         border-radius: 10px;
     }
 }
-
-/*@media screen and (min-width: 1680px) {
-    header {
-        height: 120px;
-    }
-
-    header img {
-        width: 70px;
-        height: 70px;
-    }
-
-    main {
-        height: 30%;
-    }
-
-    main h1 {
-        font-size: 44px;
-    }
-
-    main h2 {
-        font-size: 38px;
-    }
-
-    .sidebar {
-        width: 90px;
-    }
-
-    .sidebar:hover {
-        width: 500px;
-    }
-
-    .sidebar-header img {
-        width: 60px;
-        height: 60px;
-        margin-right: 4px;
-    }
-
-    .sidebar-header span {
-        font-size: 28px;
-        padding: 10px 20px;
-    }
-
-    .menu-item {
-        font-size: 24px;
-        padding: 17px 22px;
-    }
-
-    .menu-item img {
-        margin-right: 25px;
-        font-size: 28px;
-    }
-
-    .submenu {
-        padding: 16px 14px;
-    }
-
-    .submenu-item img {
-        font-size: 24px;
-        margin-right: 25px;
-    }
-
-    .submenu-item {
-        font-size: 24px;
-        margin-right: 25px;
-    }
-
-    .sidebar-footer {
-        font-size: 24px;
-        padding: 27px 22px;
-    }
-
-    .sidebar-footer img {
-        margin-right: 25px;
-    }
-
-    .menu-icon {
-        width: 45px;
-        height: 45px;
-    }
-
-    .menu-icon-2 {
-        width: 40px;
-        height: 40px;
-    }
-
-    .content {
-        height: 100%;
-    }
-
-    .carousel-container {
-        height: 100%;
-    }
-
-    .text-buttons {
-        height: 15%;
-        font-size: 28px;
-    }
-
-    .image-item {
-        height: 70%;
-    }
-
-    .buttons {
-        height: 15%;
-    }
-
-    .arrow {
-        width: 50px;
-        height: 50px;
-    }
-
-    .expand {
-        width: 80px;
-        height: 80px;
-    }
-
-    .view-more {
-        width: 200px;
-        height: 60px;
-        border-radius: 30px;
-        font-size: 20px;
-    }
-
-    section {
-        height: 30%;
-    }
-
-    .sections-buttons {
-        width: 160px;
-        height: 120px;
-        font-size: 26px;
-    }
-
-    .sections-buttons img {
-        width: 80px;
-        height: 80px;
-    }
-}*/

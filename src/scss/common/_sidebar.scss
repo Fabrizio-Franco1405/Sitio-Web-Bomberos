@@ -1,3 +1,4 @@
+//------------------------------------------- Menú --------------------------------------------//
 .menu {
     width: 100%;
     height: 100%;
@@ -7,14 +8,14 @@
 
 .sidebar {
     width: 60px;
-    height: 86%;
+    height: 89%;
     background-color: #2E323DCC;
     border-radius: 10px;
     transition: width 0.3s ease;
     overflow: hidden;
     position: fixed;
     left: 20px;
-    margin-top: 16px;
+    margin-top: 6px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -58,7 +59,7 @@
     align-items: center;
     padding: 10px 15px;
     border-radius: 10px;
-    color: #717A80; // #717A80
+    color: #717A80;
     font-family: 'Madetommy';
     font-size: 15px;
     margin-bottom: 10px;
@@ -67,26 +68,26 @@
 }
 
 .menu-item a {
-    color: #717A80; /* Color gris por defecto para todos los enlaces */
+    color: #717A80;
     text-decoration: none;
-    transition: color 0.3s ease; /* Añade una transición suave al color */
+    transition: color 0.3s ease;
 }
 
 .menu-item:hover a {
-    color: #FFFFFF; /* Color blanco para los enlaces al pasar el ratón por el contenedor */
+    color: #FFFFFF;
 }
 
 .menu-item.active a {
-    color: #FFFFFF; /* Color blanco para el enlace "Inicio" (activo) */
+    color: #FFFFFF;
 }
 
 .menu-item:hover {
-    background-color: #A0ABAFCC; // #465264
+    background-color: #A0ABAFCC;
     color: #FFFFFF;
 }
 
 .menu-item.active {
-    background-color: #8A82FF80; // #5176FF
+    background-color: #8A82FF80;
     color: #FFFFFF;
 }
 
@@ -106,7 +107,7 @@
 }
 
 .submenu {
-    background-color: #17171ECC; // #2F3946
+    background-color: #17171ECC;
     padding: 10px 7px;
     border-radius: 10px;
     margin: 0 10px 20px 10px;
@@ -115,7 +116,7 @@
 .submenu-item {
     display: flex;
     align-items: center;
-    color: #717A80; //#B0B4BB
+    color: #717A80;
     font-family: 'Madetommy';
     font-size: 17px;
     margin-bottom: 12px;
@@ -203,28 +204,28 @@ a {
     }
 
     .sidebar:hover {
-        width: 250px; /* Se expande al pasar el ratón */
+        width: 250px;
     }
 
     .menu-icon {
-        display: block; /* Muestra el icono del menú */
+        display: block;
     }
 
     .sidebar-header span,
     .menu-item span,
     .submenu-item span,
     .sidebar-footer span {
-        opacity: 0; /* Oculta los textos por defecto */
+        opacity: 0;
     }
 
     .sidebar:hover .sidebar-header span,
     .sidebar:hover .menu-item span,
     .sidebar:hover .submenu-item span,
     .sidebar:hover .sidebar-footer span {
-        opacity: 1; /* Muestra los textos al pasar el ratón */
+        opacity: 1;
     }
 
     .sidebar:hover .sidebar-footer img {
-        display: inline; /* Muestra el icono al pasar el ratón */
+        display: inline;
     }
 }
