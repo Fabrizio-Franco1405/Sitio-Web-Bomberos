@@ -1,0 +1,51 @@
+@media (max-width: 768px) {
+
+body {
+    margin: 0 5%;
+    padding: 15px;
+}
+
+.header {
+    grid-template-columns: 1fr; /* Cambia el layout a una sola columna */
+    text-align: center; /* Alinea el texto y los elementos al centro */
+    gap: 10px;
+}
+
+.header img {
+    width: 80px; /* Reduce el tamaño de la imagen */
+    height: 80px;
+    margin: 0 auto; /* Centra la imagen */
+}
+
+.header-text h1 {
+    font-size: 20px; /* Reduce el tamaño del texto */
+}
+
+.header-text p {
+    font-size: 14px; /* Reduce el tamaño del texto en el párrafo */
+}
+
+.download-btn {
+    font-size: 12px; /* Ajusta el tamaño del botón */
+    padding: 8px 16px; /* Ajusta el padding para pantallas pequeñas */
+}
+
+.options {
+    grid-template-columns: 1fr; /* Cambia el layout a una sola columna */
+    gap: 10px;
+}
+
+.option {
+    font-size: 12px; /* Reduce el tamaño del texto */
+    padding: 10px; /* Ajusta el padding */
+}
+
+.section h2 {
+    font-size: 16px; /* Reduce el tamaño de los encabezados */
+}
+
+.section p {
+    font-size: 14px; /* Ajusta el tamaño del texto */
+    line-height: 1.5; /* Reduce un poco el interlineado */
+}
+}

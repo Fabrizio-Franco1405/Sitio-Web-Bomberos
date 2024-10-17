@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+    .review, .review:nth-child(even) {
+        grid-template-columns: 1fr;
+    }
+    .image-container {
+        height: 250px;
+    }
+}
