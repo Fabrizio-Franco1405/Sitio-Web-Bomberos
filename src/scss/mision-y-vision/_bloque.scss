@@ -1,7 +1,7 @@
 //--------------------------------- Estilos para Misión y Visión ----------------------------------//
 * { margin: 0; padding: 0; }
 
-body { background: #F4F2EF; }
+body { background: $Pearl-White; }
 
 main {
     width: 100%;
@@ -16,7 +16,7 @@ section {
     min-width: 450px; max-width: 1300px;
     margin-left: 100px;
     height: 350px;
-    background: #2E323D; color: white;
+    background: $Total-Eclipse; color: white;
     border-radius: 15px; overflow: hidden;
 }
 
@@ -35,7 +35,7 @@ section .img-area .gradient-img {
     width: 50%; height: 100%;
     position: absolute;
     top: 0; right: 0;
-    background-image: linear-gradient(to left, #2E323D, transparent);
+    background-image: linear-gradient(to left, $Total-Eclipse, transparent);
 }
 
 section article {

@@ -1,4 +1,4 @@
-//------------------------------------------- Menú --------------------------------------------//
+//------------------------------------------- Menú Principal --------------------------------------------//
 .menu {
     width: 100%;
     height: 100%;
@@ -59,7 +59,7 @@
     align-items: center;
     padding: 10px 15px;
     border-radius: 10px;
-    color: #717A80;
+    color: $Phanton;
     font-family: 'Madetommy';
     font-size: 15px;
     margin-bottom: 10px;
@@ -68,7 +68,7 @@
 }
 
 .menu-item a {
-    color: #717A80;
+    color: $Phanton;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -197,35 +197,73 @@ a {
     text-decoration: none;
 }
 
+//------------------------------------------- Menú Mobile --------------------------------------------//
+footer-menu {
+    display: flex;
+    width: 100vw; height: 100vh;
+    background: #ccc;
+}
+
+.mobile-manu {
+    position: fixed; bottom: 0; z-index: 100;
+    align-items: center;
+    width: 100%; height: 66px;
+    background: #1F2129D9;
+    backdrop-filter: blur(5px);
+    overflow-y: hidden; overflow-x: none;
+    box-shadow: 0 0 40px 5px #1F21299F;
+    box-sizing: border-box;
+    display: none;
+}
+
+.mobile-manu ul {
+    display: flex; gap: 1vw;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+}
+
+.mobile-manu ul li {
+    height: 80%; 
+    margin-right: 25px;
+}
+
+.mobile-manu .nav-icon {
+    display: flex; height: 100%;
+    align-items: center;
+}
+
+.current-section {
+    display: flex;
+    align-items: center;
+    background: #8A82FF80; padding: 0 15px;
+    border-radius: 15px; gap: 10px;
+    color: white;
+}
+
+.current-section-off {
+    display: flex;
+    align-items: center;
+    border-radius: 15px; gap: 10px;
+    text-wrap: nowrap;
+    color: $Phanton;
+}
+
+.mobile-manu .nav-icon img {
+    height: 50%;
+}
+
+.off-icon {
+    opacity: 50%;
+}
+
 @media screen and (max-width: 768px) {
     .sidebar {
-        width: 60px; // Por defecto el menú es estrecho
-        height: 88%;
+        visibility: hidden;
     }
 
-    .sidebar:hover {
-        width: 250px;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
-    .sidebar-header span,
-    .menu-item span,
-    .submenu-item span,
-    .sidebar-footer span {
-        opacity: 0;
-    }
-
-    .sidebar:hover .sidebar-header span,
-    .sidebar:hover .menu-item span,
-    .sidebar:hover .submenu-item span,
-    .sidebar:hover .sidebar-footer span {
-        opacity: 1;
-    }
-
-    .sidebar:hover .sidebar-footer img {
-        display: inline;
+    .mobile-manu {
+        display: flex;
+        
     }
 }

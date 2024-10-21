@@ -32,7 +32,7 @@ main h1 {
 }
 
 main h3 {
-    color: #C9D8DD;
+    color: $Yeti;
     font-size: 1.2em;
     letter-spacing: 1px;
 }
@@ -45,7 +45,7 @@ main h3 {
 }
 
 .title-button button {
-    background-color: #8A82FF;
+    background-color: $Periwinkle;
     width: 150px;
     height: 40px;
     border: none;
@@ -98,7 +98,7 @@ main h3 {
     left: 0;
     width: 100%;
     background-color: #FFFFFF;
-    color: #717A80;
+    color: $Phanton;
     padding: 10px;
     text-align: center;
     opacity: 0; 
@@ -114,7 +114,7 @@ main h3 {
 .caption h4 {
     margin-bottom: 5px;
     font-family: 'Madetommy-Medium';
-    color: #2E323D;
+    color: $Total-Eclipse;
 }
 
 .caption p {

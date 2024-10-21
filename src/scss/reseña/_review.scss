@@ -1,13 +1,15 @@
 //-------------------------------------- Estilos para Reseña ---------------------------------------//
+* { margin: 0; padding: 0;}
+
 body {
-    background-color: #F4F2EF;
+    background-color: $Pearl-White;
     margin: 0;
-    padding: 20px;
+    padding: 20px 0;
 }
 
-h2 { font-family: 'Madetommy-Medium'; color: #17171E;}
+h2 { font-family: 'Madetommy-Medium'; color: $Eigengrau;}
 
-p, div { font-family: 'Madetommy'; color: #717A80 }
+p, div { font-family: 'Madetommy'; color: $Phanton }
 
 .container {
     max-width: 1000px;
@@ -41,7 +43,7 @@ p, div { font-family: 'Madetommy'; color: #717A80 }
 
 .review-date {
     font-size: 14px;
-    color: #717A80;
+    color: $Phanton;
     margin-bottom: 10px;
 }
 

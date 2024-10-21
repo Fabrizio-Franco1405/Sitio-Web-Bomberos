@@ -2,12 +2,12 @@
     height: 100vh;
     width: 100%;
     padding: 50px 20px;
-    background-color: #17171E; 
+    background-color: $Eigengrau; 
     color: #FFFFFF;
 }
 
 p {
-    color: #C9D8DD;
+    color: $Yeti;
 }
 
 p > span {
@@ -28,7 +28,7 @@ p > span {
 }
 
 .bloque-4 h1 span {
-    color: #8A82FF;
+    color: $Periwinkle;
 }
 
 .opiniones {
@@ -39,7 +39,7 @@ p > span {
 }
 
 .opinion {
-    background-color: #2E323D;
+    background-color: $Total-Eclipse;
     padding: 20px;
     border-radius: 10px;
     width: 48%;
@@ -88,7 +88,7 @@ p > span {
 .usuario {
     display: flex;
     align-items: center;
-    background-color: #2E323D;
+    background-color: $Total-Eclipse;
     padding: 10px;
     border-radius: 60px;
     width: 30%;
@@ -111,8 +111,8 @@ p > span {
 }
 
 .social {
-    background-color: #1F2129;
-    border: 2px solid #2E323D;
+    background-color: $Noble-Black;
+    border: 2px solid $Total-Eclipse;
     display: flex;
     align-items: center;
     padding: 10px;

@@ -7,13 +7,13 @@ h2 {
 .strong-p {
     font-family: 'Madetommy';
     font-size: 1.5rem;
-    color: #9EA4A8;
+    color: $Santury;
     font-weight: bold;
 }
 .normal-p {
     font-family: 'Madetommy';
     font-size: 1.1rem; margin: 25px 0 10px 0;
-    color: #9EA4A8;
+    color: $Santury;
 }
 
 // Botones
@@ -30,6 +30,6 @@ h2 {
     background: #5e5e6b;
 }
 .button-link {
-    background-color: #8A82FF;
+    background-color: $Periwinkle;
     color: white;
 }

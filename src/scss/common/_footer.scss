@@ -14,7 +14,7 @@
     height: 25%;
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right, #FF9E5D, #FF5E6B, #8A82FF);
+    background: linear-gradient(to right, $Papaya, $Grenadine, $Periwinkle);
 }
 
 .footer-top h2 {
@@ -41,7 +41,7 @@
     font-size: 1.3em;
     margin: auto 5%;
     text-align: start;
-    color: #C9D8DD; // Yeti #C9D8DD | Santuary #9EA4A8
+    color: $Yeti; // Yeti #C9D8DD | Santuary #9EA4A8
 }
 
 .footer-links {
@@ -66,7 +66,7 @@
 
 // El bottom del fooder
 .footer-bottom {
-    background-color: #17171E;
+    background-color: $Eigengrau;
     width: 100%;
     height: 25%;
     display: flex;
@@ -87,7 +87,7 @@
 
 .footer-bottom p {
     font-family: 'Madetommy'; // Yeti #C9D8DD | Santuary #9EA4A8
-    color: #C9D8DD;
+    color: $Yeti;
 }
 
 .footer-social {
@@ -97,4 +97,67 @@
 .footer-social img {
     width: 30px;
     height: 30px;
+}
+
+@media (max-width: 768px){
+    .footer {
+        height: auto;
+    }
+
+    .footer-top {
+        height: auto;
+        text-align: center;
+    }
+
+    .footer-top h2 {
+        font-size: 1.5em;
+        margin: auto; 
+    }
+
+    .footer-center {
+        flex-direction: column;
+        height: auto;
+        padding: 8px 0;
+        gap: 5%;
+    }
+
+    .footer-center h2 {
+        font-size: 1.1em;
+        margin: 5% 0;
+    }
+
+    .footer-links {
+        width: 100%;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    .footer-links a {
+        font-size: 0.9em;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-bottom p {
+        text-align: center;
+    }
+
+    .footer-logos, .footer-social {
+        margin: 0;
+    }
+
+    .footer-bottom img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer-social {
+        margin-bottom: 10px;
+    }
 }

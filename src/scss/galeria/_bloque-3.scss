@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #17171E;
+    background-color: $Eigengrau;
     padding: 20px;
 }
 
@@ -31,7 +31,7 @@ main-b3 {
 .text-header h2 {
     font-size: 2em;
     font-family: 'Madetommy-Medium';
-    color: #2E323D;
+    color: $Total-Eclipse;
     margin-bottom: 20px;
 }
 
@@ -100,7 +100,7 @@ main-b3 {
 
 #cube1:hover {
     transform: scale(1.1) rotate(-2.5deg);
-    border-color: 2px solid #A09A72; // #A09A72
+    border-color: 2px solid #A09A72;
     transition: transform 0.3s ease, border-color 0.5s ease;
 }
 

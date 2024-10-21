@@ -2,18 +2,19 @@ h1 {
     width: 60%; margin: 1.2vw 0;
     font-size: 2.4rem; font-weight: 800;
     font-family: 'Madetommy-Medium';
-    color: #17171E;
+    color: $Eigengrau;
 }
+
 h2 {
     font-family: 'Madetommy-Medium';
     font-size: 1.5rem; margin: 16px 0 .5vw 0;
-    color: #2E323D;
+    color: $Total-Eclipse;
 }
 
 .strong-p {
     font-family: 'Madetommy';
     font-size: 1.5rem;
-    color: #2E323D;
+    color: $Total-Eclipse;
     font-weight: bold;
 }
 .normal-p {
