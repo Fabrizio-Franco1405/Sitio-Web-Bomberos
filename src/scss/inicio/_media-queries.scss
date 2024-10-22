@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px){
+@media (max-width: 768px){
 
     //----------------------------------- Ajustes para el Bloque 1 -----------------------------------//
     .content {
@@ -206,60 +206,5 @@
 
     .card-4 img {
         max-width: 80%;
-    }
-
-    .footer-4 {
-        height: auto;
-        margin: 0;
-    }
-
-    .footer-top h2 {
-        font-size: 1.5em;
-        text-align: center;
-        margin: 0;
-        padding: 10px 0;
-    }
-
-    .footer-center {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .footer-center h2 {
-        font-size: 1.2em;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .footer-links {
-        width: 100%;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .footer-logos {
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .footer-social {
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .footer-bottom img {
-        width: 30px;
-        height: 30px;
-        margin-top: 5px;
-        border-radius: 10px;
     }
 }

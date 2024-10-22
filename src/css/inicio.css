@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Madetommy-Medium";
   src: url("/Sitio-Web-Bomberos/assets/fonts/MADETOMMY-Medium.otf"), format("otf");
@@ -6,6 +7,7 @@
   font-family: "Madetommy";
   src: url("/Sitio-Web-Bomberos/assets/fonts/MADETOMMY.otf"), format("otf");
 }
+/*------------------------------------------- Menú Principal --------------------------------------------*/
 .menu {
   width: 100%;
   height: 100%;
@@ -202,6 +204,7 @@ a {
   text-decoration: none;
 }
 
+/*------------------------------------------- Menú Mobile --------------------------------------------*/
 footer-menu {
   display: flex;
   width: 100vw;
@@ -251,8 +254,13 @@ footer-menu {
   background: rgba(138, 130, 255, 0.5019607843);
   padding: 0 15px;
   border-radius: 15px;
+}
+
+.current-section a, .current-section-off a {
+  font-family: "Madetommy";
   gap: 10px;
   color: white;
+  text-wrap: nowrap;
 }
 
 .current-section-off {
@@ -279,6 +287,7 @@ footer-menu {
     display: flex;
   }
 }
+/*-------------------------------------- Componente Header ---------------------------------------*/
 header {
   background-color: #FFFFFF;
   height: 70px;
@@ -299,6 +308,7 @@ header img {
   visibility: hidden;
 }
 
+/*-------------------------------------- Componente Footer ---------------------------------------*/
 .footer {
   background-color: #2c2f35;
   width: 100%;
@@ -399,52 +409,50 @@ header img {
 @media (max-width: 768px) {
   .footer {
     height: auto;
-  }
-  .footer-top {
-    height: auto;
-    text-align: center;
+    margin: 0;
   }
   .footer-top h2 {
     font-size: 1.5em;
-    margin: auto;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
   }
   .footer-center {
     flex-direction: column;
-    height: auto;
-    padding: 8px 0;
-    gap: 5%;
+    gap: 20px;
   }
   .footer-center h2 {
-    font-size: 1.1em;
-    margin: 5% 0;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0 auto;
   }
   .footer-links {
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
     gap: 10px;
-  }
-  .footer-links a {
-    font-size: 0.9em;
   }
   .footer-bottom {
+    margin-bottom: 63px;
     flex-direction: column;
-    height: auto;
+    gap: 15px;
+  }
+  .footer-logos {
+    margin: 0 auto;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  .footer-bottom p {
-    text-align: center;
-  }
-  .footer-logos, .footer-social {
-    margin: 0;
-  }
-  .footer-bottom img {
-    width: 25px;
-    height: 25px;
+    gap: 15px;
   }
   .footer-social {
-    margin-bottom: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .footer-bottom img {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 10px;
   }
 }
 main {
@@ -494,6 +502,7 @@ html, body {
   border: none;
 }
 
+/*-------------------------------------- Estilos para Inicio ---------------------------------------*/
 .carousel-container {
   display: flex;
   flex-direction: column;
@@ -574,6 +583,7 @@ html, body {
   height: 100%;
 }
 
+/**/
 section {
   width: 100%;
   height: 20%;
@@ -913,7 +923,7 @@ p {
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .content {
     flex-direction: column;
     height: 100%;
@@ -1071,51 +1081,5 @@ p {
   }
   .card-4 img {
     max-width: 80%;
-  }
-  .footer-4 {
-    height: auto;
-    margin: 0;
-  }
-  .footer-top h2 {
-    font-size: 1.5em;
-    text-align: center;
-    margin: 0;
-    padding: 10px 0;
-  }
-  .footer-center {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .footer-center h2 {
-    font-size: 1.2em;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .footer-links {
-    width: 100%;
-    justify-content: center;
-    gap: 10px;
-  }
-  .footer-bottom {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .footer-logos {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-  .footer-social {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-  .footer-bottom img {
-    width: 30px;
-    height: 30px;
-    margin-top: 5px;
-    border-radius: 10px;
   }
 }/*# sourceMappingURL=inicio.css.map */

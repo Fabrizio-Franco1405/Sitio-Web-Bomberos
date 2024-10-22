@@ -1,4 +1,4 @@
-//-------------------------------------- Estilos para Ayuda ---------------------------------------//
+/*-------------------------------------- Estilos para Ayuda ---------------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +37,7 @@ p { font-family: 'Madetommy';}
 
 .header-text p {
     margin: 5px 0 0;
-    color: #717A80;
+    color: $Phanton;
 }
 
 .download-btn {

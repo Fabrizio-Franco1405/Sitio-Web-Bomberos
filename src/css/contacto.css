@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Madetommy-Medium";
   src: url("/Sitio-Web-Bomberos/assets/fonts/MADETOMMY-Medium.otf"), format("otf");
@@ -6,6 +7,7 @@
   font-family: "Madetommy";
   src: url("/Sitio-Web-Bomberos/assets/fonts/MADETOMMY.otf"), format("otf");
 }
+/*------------------------------------------- Menú Principal --------------------------------------------*/
 .menu {
   width: 100%;
   height: 100%;
@@ -202,6 +204,7 @@ a {
   text-decoration: none;
 }
 
+/*------------------------------------------- Menú Mobile --------------------------------------------*/
 footer-menu {
   display: flex;
   width: 100vw;
@@ -251,8 +254,13 @@ footer-menu {
   background: rgba(138, 130, 255, 0.5019607843);
   padding: 0 15px;
   border-radius: 15px;
+}
+
+.current-section a, .current-section-off a {
+  font-family: "Madetommy";
   gap: 10px;
   color: white;
+  text-wrap: nowrap;
 }
 
 .current-section-off {
@@ -260,7 +268,6 @@ footer-menu {
   align-items: center;
   border-radius: 15px;
   gap: 10px;
-  text-wrap: nowrap;
   color: #717A80;
 }
 
@@ -280,6 +287,7 @@ footer-menu {
     display: flex;
   }
 }
+/*-------------------------------------- Estilos para Contacto ---------------------------------------*/
 * {
   margin: 0;
   padding: 0;

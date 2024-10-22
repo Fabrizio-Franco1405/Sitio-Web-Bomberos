@@ -1,4 +1,4 @@
-// Estilos para la base del Footer
+/*-------------------------------------- Componente Footer ---------------------------------------*/
 .footer {
     background-color: #2c2f35;
     width: 100%;
@@ -102,62 +102,57 @@
 @media (max-width: 768px){
     .footer {
         height: auto;
-    }
-
-    .footer-top {
-        height: auto;
-        text-align: center;
+        margin: 0;
     }
 
     .footer-top h2 {
         font-size: 1.5em;
-        margin: auto; 
+        text-align: center;
+        margin: 0;
+        padding: 10px 0;
     }
 
     .footer-center {
         flex-direction: column;
-        height: auto;
-        padding: 8px 0;
-        gap: 5%;
+        gap: 20px;
     }
 
     .footer-center h2 {
-        font-size: 1.1em;
-        margin: 5% 0;
+        font-size: 1.2em;
+        text-align: center;
+        margin: 0 auto;
     }
 
     .footer-links {
         width: 100%;
-        justify-content: space-around;
+        justify-content: center;
         gap: 10px;
-    }
-
-    .footer-links a {
-        font-size: 0.9em;
     }
 
     .footer-bottom {
+        margin-bottom: 63px;
         flex-direction: column;
-        height: auto;
+        gap: 15px;
+    }
+
+    .footer-logos {
+        margin: 0 auto;
+        display: flex;
         justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .footer-bottom p {
-        text-align: center;
-    }
-
-    .footer-logos, .footer-social {
-        margin: 0;
-    }
-
-    .footer-bottom img {
-        width: 25px;
-        height: 25px;
+        gap: 15px;
     }
 
     .footer-social {
-        margin-bottom: 10px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer-bottom img {
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+        border-radius: 10px;
     }
 }
