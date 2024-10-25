@@ -33,7 +33,7 @@
 }
 
 .sidebar:hover {
-  width: 300px;
+  width: 305px;
 }
 
 .sidebar-header {
@@ -963,12 +963,16 @@ p > span {
     height: 40px;
   }
   .socials {
+    margin-bottom: 60px;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
   }
   .social {
     width: 100%;
     padding: 15px;
+  }
+  .social:hover {
+    transform: scale(1.04) rotate(-2.4deg);
   }
   .social img {
     width: 60px;

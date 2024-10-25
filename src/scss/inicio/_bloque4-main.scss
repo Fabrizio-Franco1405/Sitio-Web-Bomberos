@@ -1,7 +1,7 @@
 .bloque-4 {
     width: 100%;
     height: 100vh;
-    background-color: #F4F2EF;
+    background-color: $Pearl-White;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -15,20 +15,24 @@
     font-size: 2em;
     font-family: 'Madetommy';
     margin-bottom: 10px;
-    color: #2E323D;
+    color: $Total-Eclipse;
 }
 
 .bloque-4 h3 {
     font-size: 1.2em;
     font-family: 'Madetommy';
     margin-bottom: 40px;
-    color: #9EA4A8;
+    color: $Santury;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .cards-4 {
@@ -56,13 +60,13 @@
     font-size: 1.5em;
     font-family: 'Madetommy';
     margin-bottom: 10px;
-    color: #2E323D;
+    color: $Total-Eclipse;
 }
 
 .card-4 p {
     font-size: 1em;
     font-family: 'Madetommy';
-    color: #9EA4A8;
+    color: $Santury;
 }
 
 .arrow-4 {

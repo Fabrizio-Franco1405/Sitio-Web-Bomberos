@@ -33,7 +33,7 @@
 }
 
 .sidebar:hover {
-  width: 300px;
+  width: 305px;
 }
 
 .sidebar-header {
@@ -294,13 +294,21 @@ footer-menu {
 }
 
 body {
-  font-family: Arial, sans-serif;
   padding: 0;
   background-color: #f4f4f4;
 }
 
+p {
+  font-family: "Madetommy";
+}
+
+h1, h2, .btn {
+  font-family: "Madetommy-Medium";
+  letter-spacing: 0.5px;
+}
+
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -357,4 +365,28 @@ h1 {
 
 .btn:hover {
   background-color: #6a4eff;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .card {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .card h2 {
+    font-size: 16px;
+  }
+  .card p {
+    font-size: 13px;
+  }
+  .btn {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
 }/*# sourceMappingURL=contacto.css.map */

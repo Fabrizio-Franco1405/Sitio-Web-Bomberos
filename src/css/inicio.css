@@ -33,7 +33,7 @@
 }
 
 .sidebar:hover {
-  width: 300px;
+  width: 305px;
 }
 
 .sidebar-header {
@@ -583,7 +583,6 @@ html, body {
   height: 100%;
 }
 
-/**/
 section {
   width: 100%;
   height: 20%;
@@ -878,6 +877,10 @@ p {
   max-width: 1200px;
   margin: 0 auto;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .cards-4 {

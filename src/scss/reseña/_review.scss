@@ -9,7 +9,7 @@ body {
 
 h2 { font-family: 'Madetommy-Medium'; color: $Eigengrau;}
 
-p, div { font-family: 'Madetommy'; color: $Phanton }
+div { font-family: 'Madetommy'; color: $Phanton }
 
 .container {
     max-width: 1000px;
@@ -35,6 +35,8 @@ p, div { font-family: 'Madetommy'; color: $Phanton }
     flex-direction: column;
     text-align: justify;
 }
+
+.review-content p { color: $Phanton; }
 
 .review-title {
     font-size: 24px;

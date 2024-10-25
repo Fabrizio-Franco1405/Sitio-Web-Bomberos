@@ -33,7 +33,7 @@
 }
 
 .sidebar:hover {
-  width: 300px;
+  width: 305px;
 }
 
 .sidebar-header {
@@ -304,7 +304,7 @@ h2 {
   color: #17171E;
 }
 
-p, div {
+div {
   font-family: "Madetommy";
   color: #717A80;
 }
@@ -332,6 +332,10 @@ p, div {
   display: flex;
   flex-direction: column;
   text-align: justify;
+}
+
+.review-content p {
+  color: #717A80;
 }
 
 .review-title {
