@@ -298,7 +298,7 @@ footer-menu {
   width: 100%;
   min-height: 100vh;
   font-family: "Madetommy";
-  background-image: linear-gradient(to top, rgb(23, 23, 30), rgba(23, 23, 30, 0.7)), url("/Sitio-Web-Bomberos/assets/img/fondo-bloque-2.webp");
+  background-image: linear-gradient(to top, rgb(23, 23, 30), rgba(23, 23, 30, 0.7)), url("/Sitio-Web-Bomberos/assets/img/Fondo_Galería.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -978,4 +978,4 @@ p > span {
     width: 60px;
     height: 60px;
   }
-}/*# sourceMappingURL=galeria.css.map */
+}

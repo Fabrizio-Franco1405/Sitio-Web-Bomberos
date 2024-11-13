@@ -455,24 +455,6 @@ header img {
     border-radius: 10px;
   }
 }
-main {
-  width: 60%;
-  height: 150px;
-  margin-top: 30px;
-  margin-left: 8%;
-  color: #FFFFFF;
-}
-
-main h1 {
-  font-family: "Madetommy-Medium";
-  font-size: 2em;
-}
-
-main h2 {
-  font-family: "Madetommy";
-  font-size: 1.4em;
-}
-
 html, body {
   margin: 0;
   padding: 0;
@@ -482,7 +464,7 @@ html, body {
 }
 
 .bloque-1 {
-  background: url("/Sitio-Web-Bomberos/assets/img/Fondo(B1)Mascara.webp");
+  background-image: linear-gradient(to left, rgb(23, 23, 30), rgba(23, 23, 30, 0.7), transparent), url("/Sitio-Web-Bomberos/assets/img/Fondo_Inicio.webp");
   margin: 0;
   height: 100vh;
   background-size: cover;
@@ -500,6 +482,31 @@ html, body {
   justify-content: center;
   align-items: center;
   border: none;
+}
+
+.title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 60%;
+  height: 150px;
+  margin-top: 30px;
+  margin-left: 8%;
+  color: #FFFFFF;
+}
+
+main h1 {
+  font-family: "Madetommy-Medium";
+  font-size: 2em;
+}
+
+main h2 {
+  font-family: "Madetommy";
+  font-size: 1.4em;
 }
 
 /*-------------------------------------- Estilos para Inicio ---------------------------------------*/
@@ -581,36 +588,6 @@ html, body {
 .expand img {
   width: 100%;
   height: 100%;
-}
-
-section {
-  width: 100%;
-  height: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5%;
-}
-
-.sections-buttons {
-  background-color: #FFFFFF;
-  width: 120px;
-  height: 80px;
-  border: none;
-  border-radius: 20px;
-  font-family: "Madetommy";
-  font-size: 15px;
-  color: #17171E;
-  cursor: pointer;
-}
-
-.sections-buttons img {
-  width: 50px;
-  height: 50px;
-}
-
-p {
-  margin: 0;
 }
 
 .bloque-2 {
@@ -1085,4 +1062,4 @@ p {
   .card-4 img {
     max-width: 80%;
   }
-}/*# sourceMappingURL=inicio.css.map */
+}

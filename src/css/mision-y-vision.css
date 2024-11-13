@@ -526,7 +526,6 @@ section article {
 section article .txt-area {
   width: 100%;
   height: 100%;
-  overflow: hidden scroll;
 }
 
 section article .btn-area {
@@ -604,4 +603,4 @@ h2 {
     padding: 4vw;
     gap: 10px;
   }
-}/*# sourceMappingURL=mision-y-vision.css.map */
+}
