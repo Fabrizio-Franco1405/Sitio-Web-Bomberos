@@ -506,6 +506,12 @@ button, p {
     grid-template-columns: 0.9rem 1fr 0.9rem;
     grid-template-rows: 50px repeat(2, 1fr) 50px 100px 50px auto 1fr;
   }
+  .items-inside {
+    flex-direction: column;
+  }
+  .img-item {
+    width: 100%;
+  }
   .main-box {
     grid-column: 2;
     grid-template-columns: 1fr;
@@ -513,6 +519,7 @@ button, p {
     padding: 30px;
     box-sizing: border-box;
   }
+  /* Estilo interno de main-box */
   .img {
     grid-column: 1;
     grid-row: 1;
@@ -534,8 +541,8 @@ button, p {
     color: gray;
   }
   .buttoms {
-    grid-column: 3;
-    grid-row: 5/6;
+    grid-column: 1;
+    grid-row: 3;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -547,6 +554,7 @@ button, p {
   .info {
     font-size: 0.8rem;
   }
+  /* */
   .eyebrow-txt1 {
     grid-column: 2;
     display: flex;
@@ -558,6 +566,7 @@ button, p {
     grid-column: 2;
     grid-row: 5;
   }
+  /* Estilo interno de eyebrows */
   .category {
     width: 50%;
   }
@@ -573,6 +582,7 @@ button, p {
   .eyebrow-txt2 > p {
     margin: 0 0 0.4rem 0;
   }
+  /* Estilo interno de sections */
   .box-line {
     display: flex;
     gap: 10px;
@@ -620,6 +630,7 @@ button, p {
   .box2 {
     grid-area: section2;
   }
+  /* final box */
   .box2 {
     display: grid;
     grid-template-columns: 1fr;
@@ -643,10 +654,121 @@ button, p {
     background: gray;
     text-align: center;
     color: white;
-    aspect-ratio: 1/1;
+    aspect-radio: 1/1;
   }
   .arrow {
     text-align: center;
     color: gray;
+  }
+  footer {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 320px) {
+  /* Ajustes generales */
+  .grid-area {
+    display: grid;
+    grid-template-columns: 0.5rem 1fr 0.5rem;
+    grid-template-rows: 40px repeat(2, 1fr) 40px auto 80px auto 1fr;
+    gap: 10px;
+  }
+  .items-inside {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .img-item {
+    width: 100%;
+    height: auto;
+  }
+  .main-box {
+    grid-column: 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px repeat(auto-fit, minmax(50px, 1fr));
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .img {
+    height: 120px;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .txt-box {
+    font-size: 1rem;
+  }
+  .buttoms {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .emergency {
+    height: 35px;
+    width: 100%;
+  }
+  .info {
+    font-size: 0.7rem;
+  }
+  .eyebrow-txt1 {
+    grid-column: 2;
+    font-size: 0.8rem;
+  }
+  .box1 {
+    grid-column: 2;
+    grid-row: 5;
+  }
+  .category {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .category > p {
+    margin: 0.2rem 0;
+  }
+  .eyebrow-txt2 {
+    font-size: 0.8rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .eyebrow-txt2 > p {
+    margin: 0.2rem 0;
+  }
+  .box-line {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .line1,
+  .line2 {
+    width: 100%;
+  }
+  .buttom-box {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+  }
+  .img2 {
+    height: 50%;
+  }
+  .buttom-box > p {
+    margin-top: 5px;
+    font-size: 0.5rem;
+  }
+  .box2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px repeat(4, 1fr) 30px;
+    padding: 5px;
+    gap: 5px;
+  }
+  .item-line {
+    height: 250px;
+  }
+  .perfil {
+    height: 80%;
+    width: 80%;
+  }
+  .arrow {
+    font-size: 0.6rem;
+  }
+  footer {
+    margin-bottom: 40px;
   }
 }
