@@ -324,6 +324,8 @@ main h3 {
   color: #C9D8DD;
   font-size: 1.2em;
   letter-spacing: 1px;
+  width: 80%;
+  text-align: justify;
 }
 
 .title-button {
@@ -543,9 +545,17 @@ main-b3 {
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
+/*.manual-button > a {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}*/
 .manual-button img {
   height: 30px;
   width: 30px;

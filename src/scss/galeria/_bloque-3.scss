@@ -46,8 +46,17 @@ main-b3 {
     cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 }
+
+/*.manual-button > a {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}*/
 
 .manual-button img {
     height: 30px;

@@ -556,6 +556,7 @@ main h2 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  cursor: pointer;
 }
 
 .buttons {
@@ -834,6 +835,10 @@ main h2 {
   text-align: center;
   padding: 40px 0;
   padding: 0;
+}
+
+p {
+  text-align: justify;
 }
 
 .bloque-4 h2 {

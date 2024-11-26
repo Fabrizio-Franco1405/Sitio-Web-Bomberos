@@ -455,6 +455,7 @@ button, p {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 /*.contact {

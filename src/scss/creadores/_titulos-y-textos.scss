@@ -11,6 +11,14 @@ h2 {
     color: $Total-Eclipse;
 }
 
+p > strong {
+    color: $Phanton;
+}
+
+hr {
+    border-radius: 48%;
+}
+
 .strong-p {
     font-family: 'Madetommy';
     font-size: 1.5rem;

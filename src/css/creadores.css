@@ -518,6 +518,14 @@ h2 {
   color: #2E323D;
 }
 
+p > strong {
+  color: #717A80;
+}
+
+hr {
+  border-radius: 48%;
+}
+
 .strong-p {
   font-family: "Madetommy";
   font-size: 1.5rem;
