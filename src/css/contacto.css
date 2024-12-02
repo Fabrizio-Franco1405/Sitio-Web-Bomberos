@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Madetommy-Medium";
-  src: url("/Sitio-Web-Bomberos/assets/fonts/MADETOMMY-Medium.otf"), format("otf");
+  src: url("../../assets/fonts/MADETOMMY-Medium.otf"), format("otf");
 }
 @font-face {
   font-family: "Madetommy";
-  src: url("/Sitio-Web-Bomberos/assets/fonts/MADETOMMY.otf"), format("otf");
+  src: url("../../assets/fonts/MADETOMMY.otf"), format("otf");
 }
 /*------------------------------------------- Menú Principal --------------------------------------------*/
 .menu {

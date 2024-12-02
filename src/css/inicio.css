@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Madetommy-Medium";
-  src: url("/Sitio-Web-Bomberos/assets/fonts/MADETOMMY-Medium.otf"), format("otf");
+  src: url("../../assets/fonts/MADETOMMY-Medium.otf"), format("otf");
 }
 @font-face {
   font-family: "Madetommy";
-  src: url("/Sitio-Web-Bomberos/assets/fonts/MADETOMMY.otf"), format("otf");
+  src: url("../../assets/fonts/MADETOMMY.otf"), format("otf");
 }
 /*------------------------------------------- Menú Principal --------------------------------------------*/
 .menu {
@@ -464,7 +464,7 @@ html, body {
 }
 
 .bloque-1 {
-  background-image: linear-gradient(to left, rgb(23, 23, 30), rgba(23, 23, 30, 0.7), transparent), url("/Sitio-Web-Bomberos/assets/img/Fondo_Inicio.webp");
+  background-image: linear-gradient(to left, rgb(23, 23, 30), rgba(23, 23, 30, 0.7), transparent), url("../../assets/img/Fondo_Inicio.webp");
   margin: 0;
   height: 100vh;
   background-size: cover;
